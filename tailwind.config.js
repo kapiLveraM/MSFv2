@@ -8,9 +8,23 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        hero: "url('/assets/images/backGround/Hero.png')",
+      },
+    
+      fontFamily: {
+        Poppins: "Poppins, sans-serif",
+      },
+
+      fontSize: {
+        "6xl": "50px",
+        "7xl": "80px",
+      },
+      colors: {
+        orange: "#CD520F",
+        main: "#2B587F",
+        blackRussian:"#0000001A",
+        eerieBlack: "#191919",
+       whisper:"#E4E4E4",
       },
     },
   },

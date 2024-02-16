@@ -1,33 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: bahnschrift;
+  src: url("/public/assets/fonts/Bahnschrift/BAHNSCHRIFT\ 2.TTF");
+  font-weight: 300;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@font-face {
+  font-family: bahnschrift;
+  src: url("/public/assets/fonts/Bahnschrift/BAHNSCHRIFT\ 11.TTF");
+  font-weight: 700;
+}
+@layer components {
+  /* Styles for mobile navigation links */
+  .mobile-nav-li {
+    @apply font-medium text-white tracking-[-0.38px] sm:text-[3vw] text-[4vw]  hover:opacity-70 transition-all ease-in-out duration-200;
+  }
+
+  /* Styles for mobile navigation overlay */
+  .mobile-nav-overlay {
+    @apply fixed px-4 items-center justify-center lg:hidden bg-black  lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-[101px] transition-all duration-200 ease-in z-[100] w-full sm:max-w-[100%];
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.font-bahnschrift {
+  font-family: bahnschrift;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.boxShadow:hover {
+  box-shadow: 0px 11px 24px 0px #0000001a;
+  transition: all ease-in-out 300ms;
+}
+.boxShadowWhy:hover{
+    box-shadow: 0px 4px 24px 0px #2B587F40;
+      transition: all ease-in-out 300ms;
+}
+
+.boxShadowPra{
+box-shadow: 5px 5px 20.200000762939453px 0px #0000001A;
 }
