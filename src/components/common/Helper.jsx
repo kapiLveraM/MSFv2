@@ -3,10 +3,16 @@ import {
   Comment,
   Compassion,
   Experience,
+  Fackbook,
+  Gpay,
+  Instagram,
   Intelligence,
+  Linkedin,
+  Twitter,
+  YouTube,
 } from "./Icons";
 
-export const navLinks = [
+export const NavLinks = [
   {
     title: "Home",
     option: [
@@ -115,7 +121,7 @@ export const Blogs = [
     iconComment: <Comment />,
     Comment: "Comment (2)",
     description:
-      "At Manly Stewart & Finaldi, our attorneys routinely represent sexual assault victims in high-profile national cases.",
+      "Riverside Country school principle Greg Anderson arrested for allegedly failing to report abuse.",
   },
   {
     image: "/assets/images/ourBlogs/FormerAnaheim.webp",
@@ -125,7 +131,7 @@ export const Blogs = [
     iconComment: <Comment />,
     Comment: "Comment (2)",
     description:
-      "At Manly Stewart & Finaldi, our attorneys routinely represent sexual assault victims in high-profile national cases.",
+      "Former Anaheim elementary school teacher Richard O’ Connor sentenced to prison for possessing child pornography.",
   },
 ];
 export const Globa = [
@@ -134,47 +140,100 @@ export const Globa = [
     shotDescription: "Roman Catholic Arch Diocese Sex Abuse Cases",
     description:
       "Over $1B in recoveries against the Roman Catholic Church on behalf of victims of sexual abuse by priests, volunteers, religious and employees.",
+    image: "/assets/images/global.png",
   },
   {
     title: "$852M",
     shotDescription: "USG Dr. Georgga=e Tyndall Sex Abuse Case",
     description:
       "George Tyndall survivors and their attorneys announce a historic $852M global settlement in USC sec abuse case.",
+    image: "/assets/images/global.png",
   },
   {
     title: "$500M",
     shotDescription: "Micgigan State University, Larry Nassar Sx Abuse Case",
     description:
       "333 sex abuse claims against Michigan state University for the abuse of child and young adult athletes by former MSU and Olympic Team doctor Larry Nassar.",
+    image: "/assets/images/global.png",
   },
 ];
 export const Contact = [
   {
     title: "SOUTHERN CALIFORNIA OFFICE",
-    shotDescription: "19100 Von Karman Avenue, Suite 800, Irvine, CA 92612",
-    pathP: "tel:(949) 252-9990",
-    pathTf: "tel:(800) 700-8450",
+    description: "19100 Von Karman Avenue, Suite 800, Irvine, CA 92612",
+    pathP: "(949) 252-9990",
+    pathTf: "(800) 700-8450",
+    phone: "P",
+    telephone: "TF",
   },
   {
     title: "NORTHERN CALIFORNIA OFFICE",
-    shotDescription: "9621 Citation Court, Suite C, Monterey, CA 93940",
-    pathP: "tel:(831) 215-2150",
-    pathTf: "tel:(800) 700-8450",
+    description: "9621 Citation Court, Suite C, Monterey, CA 93940",
+    pathP: "(831) 215-2150",
+    pathTf: "(800) 700-8450",
+    phone: "P",
+    telephone: "TF",
   },
   {
     title: "NEW YORK CITY OFFICE",
-    shotDescription:
-      "747 Third Avenue, 32nd Floor, Suite 32B, New York, NY 10017",
-    pathP: "tel:(800) 700-2751",
+    description: "747 Third Avenue, 32nd Floor, Suite 32B, New York, NY 10017",
+    pathP: "(800) 700-2751",
+    phone: "P",
   },
   {
     title: "NEW YORK OFFICE",
-    shotDescription: "140 Grand Street, White Plains, NY 10601",
-    pathP: "tel:(800) 700-2751",
+    description: "140 Grand Street, White Plains, NY 10601",
+    pathP: "(800) 700-2751",
+    phone: "P",
   },
   {
     title: "MARYLAND OFFICE",
-    shotDescription: "300 East Lombard Street Suite 1100 Baltimore, MD 21202",
-    pathP: "tel:(800) 700-2751",
+    description: "300 East Lombard Street Suite 1100 Baltimore, MD 21202",
+    pathP: "(800) 700-2751",
+    phone: "P",
+  },
+];
+// footer icon
+export const FooterLinks = [
+  {
+    title: "Links",
+    link: [
+      { links: "Home", path: "#Hogar" },
+      { links: "About", path: "#Misión" },
+      { links: "Attorneys", path: "#Tragamonedas" },
+      { links: "Practice Areas", path: "#Porqué" },
+      { links: "Results", path: "#Ofertas" },
+      { links: "Media", path: "#Ofertas" },
+    ],
+  },
+  {
+    title: "Company",
+    link: [
+      { links: "Contact Us", path: "/" },
+      { links: "Locations", path: "/" },
+      { links: "Our Mission", path: "/" },
+    ],
+  },
+  {
+    title: "Services",
+    link: [
+      { links: "Privacy Policy", path: "#" },
+      { links: "Terms of Services", path: "#" },
+    ],
+  },
+];
+export const FooterIcon = [
+  {
+    link: [
+      { icon: <Fackbook />, path: "https://www.facebook.com/" },
+      { icon: <Twitter />, path: "https://twitter.com/?lang=en" },
+      {
+        icon: <Instagram />,
+        path: "https://www.instagram.com/accounts/login/",
+      },
+      { icon: <Linkedin />, path: "linkedin.com" },
+      { icon: <YouTube />, path: "https://youtube.com/" },
+      { icon: <Gpay />, path: "https://pay.google.com/about/" },
+    ],
   },
 ];

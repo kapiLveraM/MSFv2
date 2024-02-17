@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const Ourfirm = () => {
   return (
-    <div className=" relative overflow-hidden">
-      <div className="container xl:max-w-[1140px] mx-auto px-5 sm:px-3 mt-20 mb-20 md:mb-32">
+    <div className=" relative overflow-hidden  xl:pt-8 xl:mt-20 mb-20 md:mb-32">
+      <div className="container xl:max-w-[1140px] mx-auto px-5 sm:px-3 ">
           <div className=" flex items-end justify-center">
           <CommonVecto />
           <p className=" uppercase text-lg font-Poppins text-main font-medium leading-none ms-2">

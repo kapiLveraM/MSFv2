@@ -1,64 +1,76 @@
 "use client"
-import React, { useEffect } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { Globa } from "./common/Helper";
+import React, { useRef } from "react";
 import Image from "next/image";
+import Slider from "react-slick";
+import { Globa } from "./common/Helper";
 
 const GlobalSettlement = () => {
-  useEffect(() => {
-    // Initialize Slick slider after component mounts
-    const sliderFor = document.querySelector(".slider-for");
-    const sliderNav = document.querySelector(".slider-nav");
+  const sliderRef = useRef(null);
 
-    if (sliderFor && sliderNav) {
-      const sliderSettings = {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: ".slider-nav"
-      };
+  const goToSlide = (slide) => {
+    sliderRef.current.slickGoTo(slide);
+  };
 
-      const navSliderSettings = {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: ".slider-for",
-        dots: true,
-        centerMode: true,
-        focusOnSelect: true
-      };
+  const settingsFor = {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    centerMode: true,
+    centerPeading:"6px",
+    focusOnSelect: true,
+    vertical: true,
+    verticalSwiping: true,
+    asNavFor: ".slider-nav",
+  };
 
-      // Initialize Slick sliders with vanilla JavaScript
-      new Slider(sliderFor, sliderSettings);
-      new Slider(sliderNav, navSliderSettings);
-    }
-  }, []);
+  const settingsNav = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true,
+    vertical: true,
+    verticalSwiping: true,
+    asNavFor: ".slider-for",
+  };
 
   return (
-    <div className="bg-black py-8 mb-6">
-      <div className="container xl:max-w-[1140px] mx-auto">
-        <div className="flex flex-wrap justify-between">
-          <div className="w-5/12">
-            {Globa.map((value, index) => (
-              <div key={index} className="slider-for bg-eerieBlack py-9 px-7 rounded my-6">
-                <div className="flex items-center">
-                  <p className="font-bahnschrift font-semibold text-white text-6xl leading-[122%]">
-                    {value.title}
-                  </p>
-                  <p className="font-Poppins text-base max-w-[271px] text-white opacity-70 font-normal ms-6">
-                    {value.shotDescription}
+    <div className="bg-black py-8 mb-6 relative overflow-hidden">
+      <div className="Global-Settlement w-full h-40 absolute z-10 top-7"></div>
+      <div className="Global-Settlement w-full h-40 absolute z-10 bottom-0 rotate-180"></div>
+      <div className="container xl:max-w-[1140px] mx-auto px-3">
+        <div className="flex flex-wrap justify-between items-center">
+          <div className=" lg:w-6/12">
+            <Slider {...settingsFor} ref={sliderRef} className="slider-for slider_vertical">
+              {Globa.map((value, index) => (
+                <div key={index} className="bg-eerieBlack py-3 xl:py-9 px-7 rounded my-5 ">
+                  <div className="flex items-center">
+                    <p className="font-bahnschrift font-semibold text-white text-3xl lg:text-6xl leading-[122%]">
+                      {value.title}
+                    </p>
+                    <p className="font-Poppins text-sm md:text-base max-w-[271px] text-white opacity-70 font-normal ms-6">
+                      {value.shotDescription}
+                    </p>
+                  </div>
+                  <p className="font-Poppins text-sm md:text-base max-w-[473px] text-white opacity-70 font-normal mt-3">
+                    {value.description}
                   </p>
                 </div>
-                <p className="font-Poppins text-base max-w-[473px] text-white opacity-70 font-normal mt-3">
-                  {value.description}
-                </p>
-              </div>
-            ))}
+              ))}
+            </Slider>
           </div>
-          <div className="w-6/12 mx-2 slider-nav">
-            <Image width={477} height={461} src="/assets/images/global.png" />
+          <div className=" lg:w-5/12 ">
+            <Slider {...settingsNav} className="slider-nav">
+              {Globa.map((value, index) => (
+                <div key={index} className="mx-2 flex justify-center items-center ">
+                  <Image width={477} height={461} src={value.image} className="py-7" />
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
       </div>

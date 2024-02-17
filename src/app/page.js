@@ -11,20 +11,26 @@ import CaliforniaSexual from "@/components/CaliforniaSexual";
 import OurBlogs from "@/components/OurBlogs";
 import Ourfirm from "@/components/Ourfirm";
 import ContactOur from "@/components/ContactOur";
+import Attorneys from "@/components/Attorneys";
+import Footer from "@/components/Footer";
+import RequestYourFree from "@/components/RequestYourFree";
 export default function Home() {
   return (
     <>
       <Hero />
       <FeatuRedOn />
       <WhyChooseUs />
-      {/* <GlobalSettlemen /> */}
+      <GlobalSettlemen />
       <BrackingCases />
       <Representation />
       <WePursue />
       <CaliforniaSexual />
       <OurBlogs />
       <Ourfirm />
-      <ContactOur/>
+      <ContactOur />
+      <RequestYourFree/>
+      <Attorneys />
+      <Footer/>
     </>
   );
 }

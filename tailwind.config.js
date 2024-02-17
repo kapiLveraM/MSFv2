@@ -24,7 +24,9 @@ module.exports = {
         main: "#2B587F",
         blackRussian:"#0000001A",
         eerieBlack: "#191919",
-       whisper:"#E4E4E4",
+        whisper: "#E4E4E4",
+       ivory: "#FFFFFF1A",
+
       },
     },
   },

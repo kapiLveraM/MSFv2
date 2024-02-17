@@ -23,6 +23,10 @@
   .mobile-nav-overlay {
     @apply fixed px-4 items-center justify-center lg:hidden bg-black  lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-[101px] transition-all duration-200 ease-in z-[100] w-full sm:max-w-[100%];
   }
+    .Global-Settlement{
+      @apply bg-[linear-gradient(180deg,_#000000_30.44%,_rgba(0,_0,_0,_0)_100%)];
+    }
+
 }
 .font-bahnschrift {
   font-family: bahnschrift;
@@ -39,4 +43,21 @@
 
 .boxShadowPra{
 box-shadow: 5px 5px 20.200000762939453px 0px #0000001A;
+}
+.boxBottmBoder{
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.slick-slider {
+  overflow: hidden;
+}
+
+.slick-list {
+  margin: 0 -30px;
+  /* Adjust based on your centerPadding */
+}
+
+.slick-slide {
+  transition: transform 0.3s ease;
 }

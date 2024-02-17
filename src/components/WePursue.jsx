@@ -38,7 +38,7 @@ const WePursue = () => {
                 <CheckAll />
                 <p className=" font-normal font-Poppins text-base xl:text-lg text-black max-w-[495px]">
                   Any larger organizations or institutions who failed to take
-                  action against the abuse{" "}
+                  action against the abuse
                 </p>
               </div>
               <div className=" flex gap-3 items-center mt-3 sm:mt-4">

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { DropDwonArrow, HeaderCross, MainLogo, OpenNav } from "../common/Icons";
 import MobileNav from "./MobileNav";
-import { navLinks } from "../common/Helper";
+import { NavLinks } from "../common/Helper";
 
 // Define NavBar component
 const NavBar = () => {
@@ -38,14 +38,14 @@ const NavBar = () => {
     <div className="flex justify-between items-center">
       {/* Logo */}
       <div className="mt-0">
-        <a href="#" className="w-full max-w-[150px] md:max-w-[210px]">
+        <Link href="#" className="w-full max-w-[150px] md:max-w-[210px]">
           <MainLogo />
-        </a>
+        </Link>
       </div>
       {/* Navigation links */}
 
      <div className="hidden lg:flex gap-7">
-  {navLinks.map((value, index) => {
+  {NavLinks.map((value, index) => {
     return (
       <div key={index} className="relative">
         <a
@@ -69,9 +69,9 @@ const NavBar = () => {
                     key={i}
                     className="group-hover:opacity-100 absolute opacity-0 transition-all ease-in-out duration-200 flex flex-col bg-black top-8 py-2 px-2 rounded-md"
                   >
-                    <a href="#">{subValue.links}</a>
-                    <a href="#">{subValue.links}</a>
-                    <a href="#">{subValue.links}</a>
+                    <Link href="#">{subValue.links}</Link>
+                    <Link href="#">{subValue.links}</Link>
+                    <Link href="#">{subValue.links}</Link>
                   </span>
                 );
               })}

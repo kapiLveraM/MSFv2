@@ -31,8 +31,8 @@ const CaliforniaSexual = () => {
       <div className="container xl:max-w-[1140px] px-3 mx-auto">
         <div className=" flex flex-col justify-center items-center">
           <h2 className="font-bahnschrift font-light text-white text-4xl md:text-5xl mt-3 text-center max-w-[716px] mx-auto">
-            California{" "}
-            <span className=" text-orange font-bold">Sexual Abuse Lawyers</span>{" "}
+            California
+            <span className=" text-orange font-bold">Sexual Abuse Lawyers</span>
             Who Are Here for You
           </h2>
           <p className=" max-w-[868px] mx-auto text-center text-white font-Poppins opacity-70 mt-6">
@@ -45,10 +45,10 @@ const CaliforniaSexual = () => {
           </p>
           <p className=" max-w-[868px] mx-auto text-center text-white font-Poppins opacity-70 mt-6">
             If you or a loved one is a survivor of sexual violence and abuse,
-            please{" "}
+            please
             <span className=" font-bold text-main opacity-100">
               contact our law offices in Southern California
-            </span>{" "}
+            </span>
             for a free, 100% confidential consultation regarding your case.
           </p>
           <p className=" max-w-[868px] mx-auto text-center text-white font-Poppins opacity-70 mt-6">

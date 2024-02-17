@@ -12,7 +12,7 @@ const FeatuRedOn = () => {
       <div className=" absolute top-44 md:top-16 right-[-4px] hidden sm:block">
         <VectorC/>
       </div>
-      <div className="container xl:max-w-[1140px] mx-auto px-5 sm:px-3 mt-20 mb-20 md:mb-32">
+      <div className="container xl:max-w-[1140px] mx-auto  px-3 mt-20 mb-20 md:mb-32">
         <div className=" flex items-end justify-center">
           <CommonVecto />
           <p className=" text-lg font-Poppins text-main font-medium leading-none ms-2">

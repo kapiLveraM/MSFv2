@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { navLinks } from "../common/Helper";
+import { NavLinks } from "../common/Helper";
 import { DropDwonArrow } from "../common/Icons";
 
 // Define MobileNav component
@@ -52,7 +52,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
       >
         <div className=" flex justify-center">
           <div className="flex flex-col text-white gap-9 xl:gap-5 justify-center items-start w-full">
-            {navLinks.map((value, index) => {
+            {NavLinks.map((value, index) => {
               return (
                 <div key={index} className="relative">
                   <a
