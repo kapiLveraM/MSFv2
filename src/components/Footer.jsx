@@ -28,9 +28,9 @@ const Footer = () => {
             </p>
             {/* Social media links */}
             <div className="flex gap-3 items-center mt-6">
-              {FooterIcon[0].link.map((valueIcon, i) => {
+              {FooterIcon[0].link.map((valueIcon,indexI) => {
                 return (
-                  <Link key={i} href={valueIcon.path} target="_blank" className="hover:scale-110 transition-all duration-200 ease-in-out">
+                  <Link key={indexI} href={valueIcon.path} target="_blank" className="hover:scale-110 transition-all duration-200 ease-in-out">
                     {valueIcon.icon}
                   </Link>
                 );
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
           {/* Right column */}
           <div className="xl:w-5/12 w-full flex flex-wrap xl:mt-0 mt-10 md:mt-16">
-            {FooterLinks.map((value, index) => {
+            {FooterLinks.map((value,index) => {
               return (
                 <ul
                   key={index}
@@ -51,7 +51,7 @@ const Footer = () => {
                   {value.link &&
                     value.link.map((subValue, i) => {
                       return (
-                        <li>
+                        <li key={i}>
                           <Link
                             href={subValue.path}
                             className=" font-Poppins text-white text-sm opacity-70 hover:opacity-100 transition-all ease-in-out duration-200"
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
       </div>
       {/* Footer bottom */}
-      <p className=" font-Poppins flex items-center justify-center py-5 border-t-[1px] border-[#191919] text-center gap-2 opacity-50 text-white font-medium text-sm  px-2 mt-12">
+      <p className=" font-Poppins flex items-center justify-center py-5 border-t-[1px] border-eerieBlack text-center gap-2 opacity-50 text-white font-medium text-sm  px-2 mt-12">
         Copyright © {currentYear} Manly, Stewart & Finaldi.
         {/* Footer text with current year */}
       </p>

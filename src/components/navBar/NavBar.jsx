@@ -48,7 +48,7 @@ const NavBar = () => {
   {NavLinks.map((value, index) => {
     return (
       <div key={index} className="relative">
-        <a
+        <Link
           href="#About"
           className="font-Poppins group hover:stroke-inherit  transition-all ease-in-out duration-200 font-normal text-base text-white"
         >
@@ -61,7 +61,8 @@ const NavBar = () => {
               </span>
             )}
           </span>
-          {value.title !== "Home" && value.title !== "Results" && value.title !== "Contact" &&  (
+        </Link>
+         {value.title !== "Home" && value.title !== "Results" && value.title !== "Contact" &&  (
             <div>
               {value.option.map((subValue, i) => {
                 return (
@@ -77,7 +78,6 @@ const NavBar = () => {
               })}
             </div>
           )}
-        </a>
       </div>
     );
   })}

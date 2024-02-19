@@ -5,7 +5,7 @@ import ButtonMain from "./common/button/ButtonMain";
 
 const BrackingCases = () => {
   return (
-      <div className=" bg-black my-28 pt-[52px] py-24 overflow-hidden relative">
+      <div className=" bg-black my-20 xl:my-28 pt-[52px] py-24 overflow-hidden relative">
           <div className=" absolute right-0 bottom-24 hidden lg:block">
               <brackingCasesVector/>
           </div>

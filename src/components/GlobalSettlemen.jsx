@@ -17,8 +17,9 @@ const GlobalSettlement = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    dots: true,
+    dots: false,
     centerMode: true,
+  arrows:false,
     centerPeading:"6px",
     focusOnSelect: true,
     vertical: true,
@@ -27,11 +28,12 @@ const GlobalSettlement = () => {
   };
 
   const settingsNav = {
+      arrows:false,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    dots: true,
+    dots: false,
     centerMode: true,
     focusOnSelect: true,
     vertical: true,

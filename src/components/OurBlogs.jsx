@@ -17,6 +17,7 @@ const OurBlogs = () => {
   var cardSlider = {
     slidesToShow: 3,
     slidesToScroll: 1,
+    arrows:true,
     centerMode: true,
     centerPadding: "5px",
     responsive: [

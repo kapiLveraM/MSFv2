@@ -56,14 +56,13 @@ const Hero = () => {
               </div>
             </div>
             <div className=" w-full md:w-6/12 lg:w-7/12 relative">
-              <Image
-                width={707}
-                height={425}
-                src="/assets/images/Video.png"
-                alt="Video"
-                className="w-full relative z-10"
-              />
-              <div className="absolute top-[-17px] right-[-24px]">
+             
+                <iframe
+                  src="assets/video/crescent_moon.mp4"
+                  className="w-full max-w-[707px] min-h-60 sm:min-h-96 relative z-10 "
+                />
+             
+              <div className="absolute top-[-9px] right-[-24px] hidden xl:block">
                 <VectoVideo />
               </div>
             </div>

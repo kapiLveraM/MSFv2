@@ -1,11 +1,132 @@
-import React from 'react'
+"use client";
+import React from "react";
+import Image from "next/image";
+import Slider from "react-slick";
+import { CommonVecto, CommonVectorDot, WeAreImageDot } from "./common/Icons";
 
 const WeAre = () => {
+  const WhyWeAreSlider = {
+    dots: false,
+    arrow: false,
+    loop: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    vertical: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
   return (
-      <div>
-          
+    <div className=" mt-20 lg:pt-28 relative overflow-hidden">
+   
+<p className=" font-Poppins font-black text-[108px] text-main opacity-5 absolute right-[-260px] top-[-10px] hidden md:block">
+        WHY WE ARE 
+      </p>
+      <div className=" container xl:max-w-[1140px] mx-auto xl:px-0 px-3">
+        <div className=" flex items-end justify-center">
+          <CommonVecto />
+          <p className=" text-lg font-Poppins text-main font-medium leading-none ms-2">
+            WHY WE ARE 
+          </p>
+        </div>
+        <h2 className="font-bahnschrift font-light text-black text-4xl md:text-5xl mt-3 text-center">
+          California  
+          <span className=" text-orange font-bold"> Sexual Abuse </span>
+          Attorneys
+        </h2>
+        <div className="flex flex-wrap sm:py-10 lg:justify-between justify-center">
+          <div className="lg:w-6/12 sm:w-8/12 w-full lg:mt-0 mt-12 z-20 relative lg:mb-0 mb-5">
+            <Image
+              src="/assets/images/weAre/WeAre.webp"
+              width={490}
+              height={460}
+              className="w-full lg:max-w-[540px]"
+              alt="women"
+              loading="lazy"
+              sizes="100vw"
+            />
+            <span className=" absolute top-[-7%] start-[-7%] lg:block hidden">
+              <WeAreImageDot />
+            </span>
+          </div>
+          <div className="lg:w-6/12 lg:px-3 relative w-full">
+            {/* slider */}
+            <Slider
+              {...WhyWeAreSlider}
+              className="w-full lg:overflow-[unset] overflow-hidden"
+            >
+              <div>
+                <p className="font-Bahnschrift font-bold text-2xl text-black">
+                  Nationally Recognized for Representing Sexual Abuse Survivors
+                </p>
+                <p className="mt-4 font-normal text-base text-lightBlack leading-[170%]">
+                  Manly, Stewart & Finaldi is regarded as America’s leading law
+                  firm for sexual abuse cases. Our founder and managing partner,{" "}
+                  <span className="text-orange font-bold">
+                    attorney John C.
+                  </span>{" "}
+                  Manly, has been successfully representing sexual abuse victims
+                  for over 20 years. He has been included in Super Lawyers® and
+                  named to California’s Top 100 Attorneys by the Los Angeles
+                  Daily Journal.
+                </p>
+                <p className="mt-4 font-normal text-base text-lightBlack leading-[170%]">
+                  Victim’s advocate and California sexual abuse lawyer John
+                  Manly understands that sexual abuse is an ongoing crisis and
+                  has devoted himself to becoming a national leader in the legal
+                  battle against these brutal crimes. As a firm that exclusively
+                  handles sexual abuse cases, our California law firm offers
+                  experienced representation to obtain justice for sexual abuse
+                  survivors, harassment, and discrimination.
+                </p>
+                <p className="mt-4 font-normal text-base text-lightBlack leading-[170%]">
+                  Manly Stewart & Finaldi is currently investigating alleged{" "}
+                  <span className="text-orange font-bold">
+                    sexual abuse by Dr. Robert E. Anderson at the University of
+                    Michigan.
+                  </span>{" "}
+                  Contact our firm today if you were affected.
+                </p>
+              </div>
+              <div>
+                <p className="font-Bahnschrift font-bold text-2xl text-black">
+                  Nationally Recognized for Representing Sexual Abuse Survivors
+                </p>
+                <p className="mt-4 font-normal text-base text-lightBlack leading-[170%]">
+                  Manly, Stewart & Finaldi is regarded as America’s leading law
+                  firm for sexual abuse cases. Our founder and managing partner,{" "}
+                  <span className="text-orange font-bold">
+                    attorney John C.
+                  </span>{" "}
+                  Manly, has been successfully representing sexual abuse victims
+                  for over 20 years. He has been included in Super Lawyers® and
+                  named to California’s Top 100 Attorneys by the Los Angeles
+                  Daily Journal.
+                </p>
+                <p className="mt-4 font-normal text-base text-lightBlack leading-[170%]">
+                  Victim’s advocate and California sexual abuse lawyer John
+                  Manly understands that sexual abuse is an ongoing crisis and
+                  has devoted himself to becoming a national leader in the legal
+                  battle against these brutal crimes. As a firm that exclusively
+                  handles sexual abuse cases, our California law firm offers
+                  experienced representation to obtain justice for sexual abuse
+                  survivors, harassment, and discrimination.
+                </p>
+                <p className="mt-4 font-normal text-base text-lightBlack leading-[170%]">
+                  Manly Stewart & Finaldi is currently investigating alleged{" "}
+                  <span className="text-orange font-bold">
+                    sexual abuse by Dr. Robert E. Anderson at the University of
+                    Michigan.
+                  </span>{" "}
+                  Contact our firm today if you were affected.
+                </p>
+              </div>
+            </Slider>
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default WeAre
+export default WeAre;

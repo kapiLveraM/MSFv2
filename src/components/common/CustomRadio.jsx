@@ -10,7 +10,7 @@ const CustomRadio = ({ options, selectedValue, onChange, name, error }) => {
         >
           <input
             type="radio"
-            className="assent_orange mt-[2px]"
+            className="radio_orange mt-[2px]"
             name={name}
             value={option.value}
             checked={selectedValue === option.value}

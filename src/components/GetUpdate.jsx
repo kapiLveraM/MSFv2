@@ -55,9 +55,9 @@ const GetUpdate = () => {
       emailjs
         .sendForm(
           "service_7psb72n",
-          "template_pl3c38x",
+          "template_ko9xp08",
           form.current,
-          "from_name"
+          "kCs0coeuD32As-noD"
         )
         .then(() => {
           SetFormData({
@@ -77,11 +77,11 @@ const GetUpdate = () => {
   };
 
   return (
-    <div className=" bg-white pt-36 relative">
-      <div className="absolute top-[28%] hidden lg:block">
+    <div className=" bg-white pt-20 lg:pt-36 relative">
+      <div className="absolute top-[28%] hidden xl:block">
         <GetUpdateVector/>
       </div>
-      <div className="absolute bottom-[10%] right-0 hidden lg:block">
+      <div className="absolute bottom-[10%] right-0 hidden xl:block">
         <GetUpdateVectorSmall/>
       </div>
       <div className="xl:max-w-[845px] mx-auto xl:px-0 px-3">
@@ -198,7 +198,7 @@ const GetUpdate = () => {
                 not be sent through this form. All information provided will be
                 kept strictly confidential.
               </p>
-              <div className=" flex items-center gap-5 mt-7 relative">
+              <div className=" flex items-center gap-5 mt-7 relative items-center">
                 <div className=" relative">
                   <input
                     type="checkbox"
@@ -209,7 +209,7 @@ const GetUpdate = () => {
                         checkBox: !prevState.checkBox,
                       }))
                     }
-                    className="assent_slat w-6 h-5"
+                    className="radio_main w-6 h-5"
                   />
                   {error && formData.checkBox === false && (
                     <p className="text-red-900 uppercase text-[12px] font-Bahnschrift font-normal flex items-start absolute bottom-[-15px] text-nowrap">

@@ -18,7 +18,7 @@ const CommonInput = ({
       </label>
       <div className=" relative">
         <input
-          className="outline-none text-[#CCCCCC] placeholder:text-[#CCCCCC] border border-[#CCCCCC] px-4 py-3 rounded focus:outline-none focus:shadow-outline w-full"
+          className="outline-none text-black placeholder:text-lightGary border border-lightGray px-4 py-3 rounded focus:outline-none focus:shadow-outline w-full"
           type={type}
           placeholder={placeholder}
           value={value}

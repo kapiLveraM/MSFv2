@@ -19,7 +19,7 @@ const CommonSelect = ({
         onChange={onChange}
         id={id}
         name={name}
-        className="block outline-none text-[#CCCCCC] placeholder:text-[#CCCCCC] border border-[#CCCCCC] px-4 py-3 rounded focus:outline-none focus:shadow-outline w-full focus:shadow-outline"
+        className="block outline-none text-black placeholder:text-lightGray border border-lightGray px-4 py-3 rounded focus:outline-none focus:shadow-outline w-full focus:shadow-outline"
       >
         {map.map((option, index) => (
           <option className=" w-full" key={index} value={option.value}>

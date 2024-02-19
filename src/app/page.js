@@ -13,8 +13,8 @@ import Ourfirm from "@/components/Ourfirm";
 import ContactOur from "@/components/ContactOur";
 import Attorneys from "@/components/Attorneys";
 import Footer from "@/components/Footer";
-import RequestYourFree from "@/components/RequestYourFree";
 import GetUpdate from "@/components/GetUpdate";
+import WeAre from "@/components/WeAre";
 export default function Home() {
   return (
     <>
@@ -22,6 +22,7 @@ export default function Home() {
       <FeatuRedOn />
       <WhyChooseUs />
       <GlobalSettlemen />
+      <WeAre/>
       <BrackingCases />
       <Representation />
       <WePursue />
