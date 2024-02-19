@@ -14,6 +14,7 @@ import ContactOur from "@/components/ContactOur";
 import Attorneys from "@/components/Attorneys";
 import Footer from "@/components/Footer";
 import RequestYourFree from "@/components/RequestYourFree";
+import GetUpdate from "@/components/GetUpdate";
 export default function Home() {
   return (
     <>
@@ -28,7 +29,7 @@ export default function Home() {
       <OurBlogs />
       <Ourfirm />
       <ContactOur />
-      <RequestYourFree/>
+      <GetUpdate/>
       <Attorneys />
       <Footer/>
     </>

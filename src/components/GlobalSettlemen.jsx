@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 import { Globa } from "./common/Helper";
+import { CommonVectorDot, VectorC } from "./common/Icons";
 
 const GlobalSettlement = () => {
   const sliderRef = useRef(null);
@@ -39,7 +40,13 @@ const GlobalSettlement = () => {
   };
 
   return (
-    <div className="bg-black py-8 mb-6 relative overflow-hidden">
+    <div className="bg-black py-8 mb-6 relative overflow-hidden ">
+            <div className=" absolute right-[-5px] bottom-44 hidden lg:block">
+        <CommonVectorDot/>
+      </div>
+            <div className=" absolute left-[-5px] top-[45%] hidden lg:block">
+        <VectorC/>
+      </div>
       <div className="Global-Settlement w-full h-40 absolute z-10 top-7"></div>
       <div className="Global-Settlement w-full h-40 absolute z-10 bottom-0 rotate-180"></div>
       <div className="container xl:max-w-[1140px] mx-auto px-3">
@@ -47,7 +54,8 @@ const GlobalSettlement = () => {
           <div className=" lg:w-6/12">
             <Slider {...settingsFor} ref={sliderRef} className="slider-for global ">
               {Globa.map((value, index) => (
-                <div key={index} className="bg-eerieBlack py-3 xl:py-9 px-7 rounded my-5 relative borderS">
+                <div key={index} className=" px-5">
+                <div  className="bg-eerieBlack py-3 xl:py-9 px-7 rounded my-5 relative borderS">
                   <div className="flex items-center">
                     <p className="font-bahnschrift font-semibold text-white text_white text-3xl lg:text-6xl leading-[122%]">
                       {value.title}
@@ -60,18 +68,20 @@ const GlobalSettlement = () => {
                     {value.description}
                   </p>
                   <div className="absolute top-[50%] w-[10px] h-[120px] start-0 bg-transparent translate-y-[-50%] transition-all ease-linear duration-300"></div>
-                </div>
+                  </div>
+                  </div>
               ))}
             </Slider>
           </div>
           <div className=" lg:w-5/12 ">
             <Slider {...settingsNav} className="slider-nav">
               {Globa.map((value, index) => (
-                <div key={index} className="mx-2 flex justify-center items-center ">
-                  <Image width={477} height={461} src={value.image} className="py-7" />
+                <div key={index} className="mx-2 flex justify-center items-center px-4 py-7">
+                  <Image width={477} height={461} src={value.image} alt="image"/>
                 </div>
               ))}
             </Slider>
+            <p className=" font-normal font-bahnschrift text-3xl text-white text-center mt-7">Global Settlement’s</p>
           </div>
         </div>
       </div>

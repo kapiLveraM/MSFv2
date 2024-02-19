@@ -23,9 +23,9 @@ const ContactOur = () => {
         height={380}
         src="/assets/images/brackingCases/WhiteLineBox.png"
         alt="LosAngeles"
-        className=" absolute bottom-0 right-[-40px] hidden lg:block"
+        className=" absolute bottom-0 right-[-40px] hidden xl:block"
       />
-      <div className="container xl:max-w-[1140px] px-3 mx-auto ">
+      <div className="container xl:max-w-[1140px] px-3 mx-auto relative z-50">
         <h2 className=" font-bahnschrift font-light text-white text-4xl md:text-5xl mt-3 text-center max-w-[882px] mx-auto">
           Contact Our
           <span className=" text-orange font-bold">
@@ -38,7 +38,7 @@ const ContactOur = () => {
             return (
               <div
                 key={i}
-                className={` sm:w-6/12 lg:w-4/12 sm:px-3 text-center ${
+                className={` sm:w-6/12 lg:w-4/12 sm:px-3 text-center  ${
                   i >= 3 ? "mt-9 lg:mt-12" : "mt-9"
                 }`}
               >

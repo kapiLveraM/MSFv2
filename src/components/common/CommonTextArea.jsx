@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-
-const CommonInput = ({
+const CommonTextArea = ({
   label,
   onChange,
   value,
@@ -12,13 +11,13 @@ const CommonInput = ({
   type,
 }) => {
   return (
-    <div className="">
+    <div>
       <label className="block mb-2 font-Poppins font-normal md:text-lg text-base text-lightBlack">
         {label}
       </label>
       <div className=" relative">
-        <input
-          className="outline-none text-[#CCCCCC] placeholder:text-[#CCCCCC] border border-[#CCCCCC] px-4 py-3 rounded focus:outline-none focus:shadow-outline w-full"
+        <textarea
+          className="outline-none text-[#CCCCCC] placeholder:text-[#CCCCCC] border border-[#CCCCCC] px-4 py-3 rounded focus:outline-none focus:shadow-outline w-full min-h-[135px]"
           type={type}
           placeholder={placeholder}
           value={value}
@@ -36,4 +35,4 @@ const CommonInput = ({
   );
 };
 
-export default CommonInput;
+export default CommonTextArea;
