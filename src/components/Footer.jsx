@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { MainLogo } from "./common/Icons";
+import { CommonVectorDot, FooterVectorC, MainLogo } from "./common/Icons";
 import Link from "next/link";
 import { FooterIcon, FooterLinks } from "./common/Helper";
 
@@ -8,7 +8,13 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="bg-black pt-[268px] mt-[-200px]">
+    <div className="bg-black pt-[268px] mt-[-200px] relative overflow-x-hidden">
+       <div className=" absolute right-[-18px] bottom-6 hidden lg:block">
+        <CommonVectorDot/>
+      </div>
+       <div className=" absolute left-0 bottom-8 hidden lg:block z-10">
+        <FooterVectorC/>
+      </div>
       <div className="container max-w-[1140px] mx-auto px-3">
         <div className="flex flex-wrap justify-between">
           <div className="xl:w-5/12 w-full flex justify-center flex-col items-center xl:items-start">
@@ -62,7 +68,7 @@ const Footer = () => {
         </div>
       </div>
       {/* Footer bottom */}
-      <p className=" font-Poppins flex items-center justify-center py-5 border-t-[1px] border-white text-center gap-2 opacity-50 text-white font-medium text-sm  px-2 mt-12">
+      <p className=" font-Poppins flex items-center justify-center py-5 border-t-[1px] border-[#191919] text-center gap-2 opacity-50 text-white font-medium text-sm  px-2 mt-12">
         Copyright © {currentYear} Manly, Stewart & Finaldi.
         {/* Footer text with current year */}
       </p>

@@ -1,7 +1,15 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { CommonVecto } from "./common/Icons";
+import CommonInput from "./common/CommonInput";
 
 const RequestYourFree = () => {
+  const [inputValue, setInputValue] = useState("");
+
+  const handleChange = (e) => {
+    setInputValue();
+  };
+
   return (
     <div className=" mt-[139px]">
       <div className="container xl:max-w-[1140px] px-3 mx-auto ">
@@ -21,6 +29,14 @@ const RequestYourFree = () => {
           <span className=" text-orange">(800) 700-8450</span> for answers to
           anything and everything you would like to know about your case.
         </p>
+        <form action="" className=" mt-12">
+          <CommonInput
+            label="First Name"
+            type="text"
+            placeholder="First Name"
+            onChange={handleChange}
+          />
+        </form>
       </div>
     </div>
   );

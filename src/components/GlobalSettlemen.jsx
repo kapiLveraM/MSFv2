@@ -45,20 +45,21 @@ const GlobalSettlement = () => {
       <div className="container xl:max-w-[1140px] mx-auto px-3">
         <div className="flex flex-wrap justify-between items-center">
           <div className=" lg:w-6/12">
-            <Slider {...settingsFor} ref={sliderRef} className="slider-for slider_vertical">
+            <Slider {...settingsFor} ref={sliderRef} className="slider-for global ">
               {Globa.map((value, index) => (
-                <div key={index} className="bg-eerieBlack py-3 xl:py-9 px-7 rounded my-5 ">
+                <div key={index} className="bg-eerieBlack py-3 xl:py-9 px-7 rounded my-5 relative borderS">
                   <div className="flex items-center">
-                    <p className="font-bahnschrift font-semibold text-white text-3xl lg:text-6xl leading-[122%]">
+                    <p className="font-bahnschrift font-semibold text-white text_white text-3xl lg:text-6xl leading-[122%]">
                       {value.title}
                     </p>
-                    <p className="font-Poppins text-sm md:text-base max-w-[271px] text-white opacity-70 font-normal ms-6">
+                    <p className="font-Poppins text-sm  md:text-base max-w-[271px] text-white opacity-70 font-normal ms-6">
                       {value.shotDescription}
                     </p>
                   </div>
-                  <p className="font-Poppins text-sm md:text-base max-w-[473px] text-white opacity-70 font-normal mt-3">
+                  <p className="font-Poppins text-sm md:text-base max-w-[473px] text-white  opacity-70 font-normal mt-3">
                     {value.description}
                   </p>
+                  <div className="absolute top-[50%] w-[10px] h-[120px] start-0 bg-transparent translate-y-[-50%] transition-all ease-linear duration-300"></div>
                 </div>
               ))}
             </Slider>

@@ -2,7 +2,8 @@
 import React from "react";
 import { Contact } from "./common/Helper";
 import Link from "next/link";
-import {  VectorC } from "./common/Icons";
+import {  CommonVectorDot, VectorC } from "./common/Icons";
+import Image from "next/image";
 
 const ContactOur = () => {
   return (
@@ -10,7 +11,20 @@ const ContactOur = () => {
       <div className=" absolute right-[-10px] top-[20%] hidden lg:block">
         <VectorC/>
       </div>
-      
+      <div className=" absolute right-[-10px] bottom-16 hidden lg:block">
+        <CommonVectorDot/>
+      </div>
+      <div className=" absolute left-[-5px] bottom-44 hidden lg:block">
+        <CommonVectorDot/>
+      </div>
+        <Image
+        loading="lazy"
+        width={380}
+        height={380}
+        src="/assets/images/brackingCases/WhiteLineBox.png"
+        alt="LosAngeles"
+        className=" absolute bottom-0 right-[-40px] hidden lg:block"
+      />
       <div className="container xl:max-w-[1140px] px-3 mx-auto ">
         <h2 className=" font-bahnschrift font-light text-white text-4xl md:text-5xl mt-3 text-center max-w-[882px] mx-auto">
           Contact Our

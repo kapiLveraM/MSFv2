@@ -32,7 +32,7 @@ const CaliforniaSexual = () => {
         <div className=" flex flex-col justify-center items-center">
           <h2 className="font-bahnschrift font-light text-white text-4xl md:text-5xl mt-3 text-center max-w-[716px] mx-auto">
             California
-            <span className=" text-orange font-bold">Sexual Abuse Lawyers</span>
+            <span className=" text-orange font-bold"> Sexual Abuse Lawyers </span>
             Who Are Here for You
           </h2>
           <p className=" max-w-[868px] mx-auto text-center text-white font-Poppins opacity-70 mt-6">

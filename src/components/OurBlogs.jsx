@@ -63,11 +63,11 @@ const OurBlogs = () => {
             <span className=" text-orange font-bold"> Featured </span>
             Stories
           </h2>
-          <div className="relative">
+          <div className="relative ">
             <Slider {...cardSlider} ref={sliderRef} className="blog">
               {Blogs.map((value, index) => (
                 <div key={index} className="w-4/12 pt-16 px-3 sm:px-2 ">
-                  <div className=" mt-0">
+                  <div className=" mt-0 border border-whisper px-2 pt-3 pb-[38px] rounded">
                     <Image
                       loading="lazy"
                       width={341}
@@ -100,7 +100,7 @@ const OurBlogs = () => {
                     >
                       Read More <ReadMoreArrow />
                     </Link>
-                    <div className="boxBottmBoder bottom-[-5px] absolute w-full group-hover:opacity-100 opacity-0 transition-all ease-in-out duration-300"></div>
+                  <div className="absolute boxBottmBoder bottom-[-6px] w-[229px] h-[10px] start-[50%] bg-transparent translate-x-[-50%]  transition-all ease-linear duration-300"></div>
                   </div>
                 </div>
               ))}
