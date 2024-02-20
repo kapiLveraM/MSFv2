@@ -4,11 +4,16 @@ import { WhyChoose } from "./common/Helper";
 
 const WhyChooseUs = () => {
   return (
-    <div className=" relative overflow-hidden md:mt-20 mb-20 lg:mb-32">
+    <div className=" relative overflow-hidden  lg:pt-32 mt-20 mb-20 lg:mb-32">
       <div className=" absolute top-[29%] left-[-3px] hidden sm:block">
-        <VectorC/>
+        <VectorC />
       </div>
-     <p className=" font-Poppins font-black text-[108px] text-main opacity-5 absolute right-[-115px] top-[-20px] hidden md:block">CHOOSE US</p> 
+      <p
+        data-aos="fade-left"
+        className=" font-Poppins font-black text-[108px] text-main !opacity-5 absolute right-[-115px] top-[0px] hidden md:block"
+      >
+        CHOOSE US
+      </p>
       <div className="container xl:max-w-[1140px] px-3 mx-auto ">
         <div className=" flex items-end justify-center">
           <CommonVecto />
@@ -22,8 +27,16 @@ const WhyChooseUs = () => {
         <div className=" flex justify-center items-center xl:items-start flex-wrap mt-8 xl:mt-14">
           {WhyChoose.map((value, index) => {
             return (
-              <div key={index} className=" md:w-6/12 xl:w-4/12 sm:px-3">
-                <div className={` mt-6 xl:mt-0 justify-center items-center flex flex-col group hover:border-main boxShadowWhy transition-all hover:translate-y-[-10px] ease-in-out duration-300 relative  py-10 border border-blackRussian min-h-[311px] rounded xl:max-w-[364px] w-full ${index === 2 ?"!px-3":" px-4 sm:px-5"}`}>
+              <div
+                data-aos="fade-up"
+                key={index}
+                className=" md:w-6/12 xl:w-4/12 sm:px-3"
+              >
+                <div
+                  className={` mt-6 xl:mt-0 justify-center items-center flex flex-col group hover:border-main boxShadowWhy transition-all hover:translate-y-[-10px] ease-in-out duration-300 relative  py-10 border border-blackRussian min-h-[311px] rounded xl:max-w-[364px] w-full ${
+                    index === 2 ? "!px-3" : " px-4 sm:px-5"
+                  }`}
+                >
                   {value.icon}
                   <h4 className=" font-bahnschrift group-hover:text-main transition-all ease-in-out duration-300 text-black font-semibold text-2xl mt-6">
                     {value.title}

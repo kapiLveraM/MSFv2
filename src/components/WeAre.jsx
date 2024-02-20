@@ -18,24 +18,33 @@ const WeAre = () => {
   };
   return (
     <div className=" mt-20 lg:pt-28 relative overflow-hidden">
-   
-<p className=" font-Poppins font-black text-[108px] text-main opacity-5 absolute right-[-260px] top-[-10px] hidden md:block">
-        WHY WE ARE 
+      <p
+        data-aos-offset="100"
+        data-aos="fade-left"
+        className=" font-Poppins font-black text-[108px] text-main !opacity-5 absolute right-[-260px] top-[-10px] hidden md:block"
+      >
+        WHY WE ARE
       </p>
       <div className=" container xl:max-w-[1140px] mx-auto xl:px-0 px-3">
-        <div className=" flex items-end justify-center">
-          <CommonVecto />
-          <p className=" text-lg font-Poppins text-main font-medium leading-none ms-2">
-            WHY WE ARE 
-          </p>
+        <div data-aos="fade-right">
+          <div className=" flex items-end justify-center">
+            <CommonVecto />
+            <p className=" text-lg font-Poppins text-main font-medium leading-none ms-2">
+              WHY WE ARE
+            </p>
+          </div>
+          <h2 className="font-bahnschrift font-light text-black text-4xl md:text-5xl mt-3 text-center">
+            California
+            <span className=" text-orange font-bold"> Sexual Abuse </span>
+            Attorneys
+          </h2>
         </div>
-        <h2 className="font-bahnschrift font-light text-black text-4xl md:text-5xl mt-3 text-center">
-          California  
-          <span className=" text-orange font-bold"> Sexual Abuse </span>
-          Attorneys
-        </h2>
         <div className="flex flex-wrap sm:py-10 lg:justify-between justify-center">
-          <div className="lg:w-6/12 sm:w-8/12 w-full lg:mt-0 mt-12 z-20 relative lg:mb-0 mb-5">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="-1000"
+            className="lg:w-6/12 sm:w-8/12 w-full lg:mt-0 mt-12 z-20 relative lg:mb-0 mb-5"
+          >
             <Image
               src="/assets/images/weAre/WeAre.webp"
               width={490}
@@ -49,7 +58,11 @@ const WeAre = () => {
               <WeAreImageDot />
             </span>
           </div>
-          <div className="lg:w-6/12 lg:px-3 relative w-full">
+          <div
+            data-aos="fade-down-left"
+            data-aos-offset="-1000"
+            className="lg:w-6/12 lg:px-3 relative w-full"
+          >
             {/* slider */}
             <Slider
               {...WhyWeAreSlider}

@@ -9,7 +9,11 @@ const Representation = () => {
       <div className="container xl:max-w-[1140px] px-3 mx-auto">
         <div className=" flex justify-center flex-wrap">
           <div className=" lg:w-6/12 xl:w-5/12 ">
-            <div className="relative h-full">
+            <div
+              data-aos="fade-right"
+              data-aos-offset="-1000"
+              className="relative h-full"
+            >
               <Image
                 loading="lazy"
                 width={537}
@@ -27,31 +31,51 @@ const Representation = () => {
             </div>
           </div>
           <div className=" lg:w-6/12 xl:w-7/12 lg:ps-11 mt-6 lg:mt-0">
-            <h3 className=" font-bahnschrift text-2xl md:text-[38px] font-light text-black lg:leading-10">
+            <h3
+              data-aos="fade-left"
+              data-aos-offset="-1000"
+              className=" font-bahnschrift text-2xl md:text-[38px] font-light text-black lg:leading-10"
+            >
               Representation for
               <span className="font-bold text-orange">
                 Sexual Abuse Victims
               </span>
               Across California
             </h3>
-            <p className=" text-base font-normal font-Poppins text-black opacity-70 mt-4">
+            <p
+              data-aos="fade-left"
+              data-aos-offset="-1000"
+              className=" text-base font-normal font-Poppins text-black opacity-70 mt-4"
+            >
               Our California sexual abuse lawyers have over 20 years of
               experience litigating various cases of sexual violence. This
               includes instances of:
             </p>
-            <div className=" flex gap-3 items-center mt-6">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="-1000"
+              className=" flex gap-3 items-center mt-6"
+            >
               <CheckAll />
               <p className=" font-normal font-Poppins text-lg text-black">
                 Clergy abuse
               </p>
             </div>
-            <div className=" flex gap-3 items-center mt-3 sm:mt-4">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="-1000"
+              className=" flex gap-3 items-center mt-3 sm:mt-4"
+            >
               <CheckAll />
               <p className=" font-normal font-Poppins text-lg text-black">
                 School abuse
               </p>
             </div>
-            <div className=" flex gap-3 items-center mt-3 sm:mt-4">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="-1000"
+              className=" flex gap-3 items-center mt-3 sm:mt-4"
+            >
               <CheckAll />
               <Link
                 href="#"
@@ -61,14 +85,22 @@ const Representation = () => {
               </Link>
             </div>
 
-            <div className=" flex gap-3 items-center mt-3 sm:mt-4">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="-1000"
+              className=" flex gap-3 items-center mt-3 sm:mt-4"
+            >
               <CheckAll />
               <p className=" font-normal font-Poppins text-lg text-black">
                 Abuse at youth group and summer camps
               </p>
             </div>
 
-            <div className=" flex gap-3 items-center mt-3 sm:mt-4">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="-1000"
+              className=" flex gap-3 items-center mt-3 sm:mt-4"
+            >
               <CheckAll />
               <p className=" font-normal font-Poppins text-lg text-black">
                 Cases of
@@ -78,26 +110,36 @@ const Representation = () => {
                 harassment
               </p>
             </div>
-            <div className=" flex gap-3 items-center mt-3 sm:mt-4">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="-1000"
+              className=" flex gap-3 items-center mt-3 sm:mt-4"
+            >
               <CheckAll />
               <p className=" font-normal font-Poppins text-lg text-black">
                 <Link href="#" className=" text-orange underline">
-                  
                   Elder sexual abuse
                 </Link>
                 in nursing homes
               </p>
             </div>
-            <div className=" flex gap-3 items-center mt-3 sm:mt-4">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="-1000"
+              className=" flex gap-3 items-center mt-3 sm:mt-4"
+            >
               <CheckAll />
               <p className=" font-normal font-Poppins text-lg text-black">
                 Uber/Lyft sexual abuse
               </p>
             </div>
-            <div className=" flex gap-3 items-center mt-3 sm:mt-4">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="-1000"
+              className=" flex gap-3 items-center mt-3 sm:mt-4"
+            >
               <CheckAll />
               <p className=" font-normal font-Poppins text-lg text-black">
-                
                 Sexual abuse by doctors
               </p>
             </div>

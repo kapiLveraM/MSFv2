@@ -4,32 +4,34 @@ import Image from "next/image";
 
 const Attorneys = () => {
   return (
-    <div className=" mt-16 relative z-10 ">
-      
+    <div
+      data-aos="fade-up"
+      data-aos-offset="-1000"
+      className=" mt-16 relative z-10 "
+    >
       <div className="container xl:max-w-[1140px] mx-auto  px-3 relative overflow-hidden">
         <div className=" absolute top-11 hidden lg:block">
-        <AttorneysBigC />
-      </div>
-        <div className=" absolute bottom-11 right-3 hidden lg:block">
-
-        <AttorneysSmallC />
+          <AttorneysBigC />
         </div>
-          <Image
-        loading="lazy"
-        width={331}
-        height={173}
-        src="/assets/images/Attorneys/AttorneyWhiteLineBox.png"
-        alt="Representation"
-        className=" absolute left-3 bottom-0 h-44 max-w-60  hidden lg:block"
-      />
-          <Image
-        loading="lazy"
-        width={331}
-        height={173}
-        src="/assets/images/Attorneys/AttorneyWhiteLineBox.png"
-        alt="Representation"
-        className=" absolute right-[-30px] top-[-20px] h-44 max-w-60 hidden lg:block"
-      />
+        <div className=" absolute bottom-11 right-3 hidden lg:block">
+          <AttorneysSmallC />
+        </div>
+        <Image
+          loading="lazy"
+          width={331}
+          height={173}
+          src="/assets/images/Attorneys/AttorneyWhiteLineBox.png"
+          alt="Representation"
+          className=" absolute left-3 bottom-0 h-44 max-w-60  hidden lg:block"
+        />
+        <Image
+          loading="lazy"
+          width={331}
+          height={173}
+          src="/assets/images/Attorneys/AttorneyWhiteLineBox.png"
+          alt="Representation"
+          className=" absolute right-[-30px] top-[-20px] h-44 max-w-60 hidden lg:block"
+        />
         <div className=" bg-main py-11 rounded flex flex-col justify-center items-center px-4">
           <h2 className=" font-bahnschrift text-4xl lg:text-5xl text-white max-w-[700px] mx-auto text-center font-light">
             Attorneys:

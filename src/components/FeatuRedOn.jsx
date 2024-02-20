@@ -5,21 +5,21 @@ import Image from "next/image";
 
 const FeatuRedOn = () => {
   return (
-    <div className=" relative overflow-hidden">
+    <div className=" relative ">
       <div className=" absolute top-16">
-        <FeatuRedVector/>
+        <FeatuRedVector />
       </div>
       <div className=" absolute top-44 md:top-16 right-[-4px] hidden sm:block">
-        <VectorC/>
+        <VectorC />
       </div>
-      <div className="container xl:max-w-[1140px] mx-auto  px-3 mt-20 mb-20 md:mb-32">
-        <div className=" flex items-end justify-center">
+      <div className="container xl:max-w-[1140px] mx-auto  px-3 mt-20">
+        <div className=" flex items-end justify-center" data-aos="fade-up">
           <CommonVecto />
           <p className=" text-lg font-Poppins text-main font-medium leading-none ms-2">
             FEATURED ON
           </p>
         </div>
-        <div className=" lg:max-w-[912px] mx-auto">
+        <div data-aos="fade-up" className=" lg:max-w-[912px] mx-auto">
           <div className="flex justify-center items-center flex-wrap mt-6 md:mt-12">
             {FeatuRed.map((image, index) => {
               return (

@@ -2,22 +2,22 @@
 import React from "react";
 import { Contact } from "./common/Helper";
 import Link from "next/link";
-import {  CommonVectorDot, VectorC } from "./common/Icons";
+import { CommonVectorDot, VectorC } from "./common/Icons";
 import Image from "next/image";
 
 const ContactOur = () => {
   return (
     <div className=" bg-black pt-14 pb-[74px] relative overflow-hidden">
       <div className=" absolute right-[-10px] top-[20%] hidden lg:block">
-        <VectorC/>
+        <VectorC />
       </div>
       <div className=" absolute right-[-10px] bottom-16 hidden lg:block">
-        <CommonVectorDot/>
+        <CommonVectorDot />
       </div>
       <div className=" absolute left-[-5px] bottom-44 hidden lg:block">
-        <CommonVectorDot/>
+        <CommonVectorDot />
       </div>
-        <Image
+      <Image
         loading="lazy"
         width={380}
         height={380}
@@ -26,14 +26,22 @@ const ContactOur = () => {
         className=" absolute bottom-0 right-[-40px] hidden xl:block"
       />
       <div className="container xl:max-w-[1140px] px-3 mx-auto relative z-50">
-        <h2 className=" font-bahnschrift font-light text-white text-4xl md:text-5xl mt-3 text-center max-w-[882px] mx-auto">
+        <h2
+          data-aos="fade-right"
+          data-aos-offset="-1000"
+          className=" font-bahnschrift font-light text-white text-4xl md:text-5xl mt-3 text-center max-w-[900px] mx-auto"
+        >
           Contact Our
           <span className=" text-orange font-bold">
             California Sexual Abuse
           </span>
           Attorneys Today!
         </h2>
-        <div className=" flex flex-wrap justify-center mt-1">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="-1000"
+          className=" flex flex-wrap justify-center mt-1"
+        >
           {Contact.slice(0, 5).map((value, i) => {
             return (
               <div

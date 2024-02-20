@@ -1,7 +1,12 @@
+/* Importing fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Tailwind CSS directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Define custom font faces */
 @font-face {
   font-family: bahnschrift;
   src: url("/public/assets/fonts/Bahnschrift/BAHNSCHRIFT\ 2.TTF");
@@ -13,43 +18,53 @@
   src: url("/public/assets/fonts/Bahnschrift/BAHNSCHRIFT\ 11.TTF");
   font-weight: 700;
 }
+
+/* Component styles */
 @layer components {
+
   /* Styles for mobile navigation links */
   .mobile-nav-li {
-    @apply font-medium text-white tracking-[-0.38px] sm:text-[3vw] text-[4vw]  hover:opacity-70 transition-all ease-in-out duration-200;
+    @apply font-medium text-white tracking-[-0.38px] sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200;
   }
 
   /* Styles for mobile navigation overlay */
   .mobile-nav-overlay {
-    @apply fixed px-4 items-center justify-center lg:hidden bg-black  lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-[101px] transition-all duration-200 ease-in z-[100] w-full sm:max-w-[100%];
+    @apply fixed px-4 items-center justify-center lg:hidden bg-black lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-[101px] transition-all duration-200 ease-in z-[100] w-full sm:max-w-[100%];
   }
+
+  /* Additional global styles */
   .Global-Settlement {
     @apply bg-[linear-gradient(180deg,_#000000_30.44%,_rgba(0,_0,_0,_0)_100%)];
   }
-     .global .slick-current+div .borderS {
-       @apply !border-main shadow-[0px_4px_26px_2px_#2B587F80];
-     }
-  
-     .global .slick-current+div .bg-transparent {
-       @apply bg-main;
-     }
-  
-     .global .slick-slide {
-       @apply !w-full;
-     }
-  
-     .global .slick-current+div .text_white {
-       @apply !text-main;
-     }
+
+  .global .slick-current+div .borderS {
+    @apply !border-main shadow-[0px_4px_26px_2px_#2B587F80];
+  }
+
+  .global .slick-current+div .bg-transparent {
+    @apply bg-main;
+  }
+
+  .global .slick-slide {
+    @apply !w-full;
+  }
+
+  .global .slick-current+div .text_white {
+    @apply !text-main;
+  }
 }
+
+/* Font declaration for custom class */
 .font-bahnschrift {
   font-family: bahnschrift;
 }
 
+/* Hover effects */
 .boxShadow:hover {
   box-shadow: 0px 11px 24px 0px #0000001a;
   transition: all ease-in-out 300ms;
 }
+
 .boxShadowWhy:hover {
   box-shadow: 0px 4px 24px 0px #2b587f40;
   transition: all ease-in-out 300ms;
@@ -58,33 +73,38 @@
 .boxShadowPra {
   box-shadow: 5px 5px 20.200000762939453px 0px #0000001a;
 }
+
+/* Miscellaneous styles */
 .boxBottmBoder {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 .blog .slick-list {
   overflow: unset !important;
 }
 
+/* Media query for larger screens */
 @media (min-width:1024px) {
-  .blog .slick-current + div .border {
+  .blog .slick-current+div .border {
     @apply !border-main shadow-[0px_4px_26px_2px_#2B587F80] translate-y-[-40px];
   }
 
-  .blog .slick-current + div .bg-transparent {
+  .blog .slick-current+div .bg-transparent {
     @apply bg-main;
   }
 
-  .blog .slick-current + .text-white {
+  .blog .slick-current+.text-white {
     @apply !text-main;
   }
 
-  .blog .slick-current + div .read {
+  .blog .slick-current+div .read {
     @apply !text-main mb-7;
   }
 }
-/* get update */
+
+/* Styles for radio buttons */
 .radio_orange {
   accent-color: #cd520f;
 }
@@ -92,4 +112,50 @@
 .radio_main {
   accent-color: #2b587f;
 }
+.rotate_keyFram {
+  animation: rotateImg 5s linear infinite;
+}
 
+@keyframes rotateImg {
+  to {
+    transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(100deg);
+  }
+}
+
+/* Back to top button animation */
+.back_to_top {
+  -webkit-animation: top-btn infinite linear 2s;
+  animation: top-btn infinite linear 2s;
+}
+
+/* Keyframes for back to top button animation */
+@-webkit-keyframes top-btn {
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes top-btn {
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+.slick-arrow{
+  display: none !important;
+}

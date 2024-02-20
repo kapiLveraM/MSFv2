@@ -1,14 +1,27 @@
-import React from "react";
-import { ArrowButton, brackingCasesVector, VectorC, WhiteVecto } from "./common/Icons";
+"use client";
+import React, { useEffect } from "react";
+import {
+  ArrowButton,
+  brackingCasesVector,
+  VectorC,
+  WhiteVecto,
+} from "./common/Icons";
 import Image from "next/image";
 import ButtonMain from "./common/button/ButtonMain";
+import Aos from "aos";
 
 const BrackingCases = () => {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+    });
+  }, []);
+
   return (
-      <div className=" bg-black my-20 xl:my-28 pt-[52px] py-24 overflow-hidden relative">
-          <div className=" absolute right-0 bottom-24 hidden lg:block">
-              <brackingCasesVector/>
-          </div>
+    <div className="bg-black my-20 xl:my-28 pt-[52px] py-24 overflow-hidden relative">
+      <div className=" absolute right-0 bottom-24 hidden lg:block">
+        <brackingCasesVector />
+      </div>
       <Image
         loading="lazy"
         width={380}
@@ -23,10 +36,18 @@ const BrackingCases = () => {
       <p className=" font-Poppins font-black text-[108px] text-white opacity-5 absolute left-[-380px] top-[-10px] hidden md:block">
         BRACKING CASES
       </p>
-      <div className="container xl:max-w-[1140px] px-3 mx-auto">
+      <div
+        data-aos="zoom-in-down"
+        data-aos-offset="-1000"
+        className="container xl:max-w-[1140px] px-3 mx-auto"
+      >
         <div className=" flex items-end justify-center">
           <WhiteVecto />
-          <p className=" text-lg font-Poppins text-white font-medium leading-none ms-2">
+          <p
+            className=" text-lg font-Poppins text-white font-medium leading-none ms-2"
+            data-aos="fade-up"
+            data-aos-offset="-1000"
+          >
             BRACKING CASES
           </p>
         </div>
@@ -53,7 +74,11 @@ const BrackingCases = () => {
             </div>
           </div>
           <div className="flex justify-center w-full lg:w-6/12 mt-6 lg:mt-0 sm:px-2">
-            <div className=" relative">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="-1000"
+              className=" relative"
+            >
               <Image
                 loading="lazy"
                 width={558}

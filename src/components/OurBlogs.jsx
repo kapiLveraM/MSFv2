@@ -17,7 +17,7 @@ const OurBlogs = () => {
   var cardSlider = {
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows:true,
+    arrows: false,
     centerMode: true,
     centerPadding: "5px",
     responsive: [
@@ -48,11 +48,15 @@ const OurBlogs = () => {
 
   return (
     <div className=" mb-20 xl:mb-[106px] relative ">
-      <p className=" font-Poppins font-black text-[108px] text-main opacity-5 absolute left-[-25px] top-[-80px] hidden md:block">
+      <p
+        data-aos="fade-right"
+        data-aos-offset="-1000"
+        className=" font-Poppins font-black text-[108px] text-main !opacity-5 absolute left-[-25px] top-[-80px] hidden md:block"
+      >
         R BLOGS
       </p>
-      <div className="overflow-hidden">
-        <div className="container xl:max-w-[1140px] px-3 mx-auto ">
+      <div className="overflow-hidden relative">
+        <div className="container xl:max-w-[1140px] px-3 mx-auto overflow-hidden">
           <div className=" flex items-end justify-center">
             <CommonVecto />
             <p className=" text-lg font-Poppins text-main font-medium leading-none ms-2">
@@ -64,7 +68,7 @@ const OurBlogs = () => {
             <span className=" text-orange font-bold"> Featured </span>
             Stories
           </h2>
-          <div className="relative ">
+          <div data-aos="fade-up" data-aos-offset="-1000" className="relative ">
             <Slider {...cardSlider} ref={sliderRef} className="blog">
               {Blogs.map((value, index) => (
                 <div key={index} className="w-4/12 pt-16 px-3 sm:px-2 ">
@@ -101,26 +105,26 @@ const OurBlogs = () => {
                     >
                       Read More <ReadMoreArrow />
                     </Link>
-                  <div className="absolute boxBottmBoder bottom-[-6px] w-[229px] h-[10px] start-[50%] bg-transparent translate-x-[-50%]  transition-all ease-linear duration-300"></div>
+                    <div className="absolute boxBottmBoder bottom-[-6px] w-[229px] h-[10px] start-[50%] bg-transparent translate-x-[-50%]  transition-all ease-linear duration-300"></div>
                   </div>
                 </div>
               ))}
             </Slider>
-            <div className=" mt-14 xl:mt-0 flex items-center justify-center w-full gap-3 ">
-              <span
-                className=" xl:absolute  xl:top-[50%] translate-y-[-50%] start-[-50px]"
-                onClick={prevSlideHandler}
-              >
-                <PrevArrow />
-              </span>
-              <span
-                className=" xl:absolute xl:top-[50%] translate-y-[-50%] end-[-50px] rotate-180"
-                onClick={nextSlideHandler}
-              >
-                <NextArrow />
-              </span>
-            </div>
           </div>
+        </div>
+        <div className=" mt-14 xl:mt-0 flex items-center justify-center w-full gap-3 ">
+          <span
+            className=" xl:absolute  xl:top-[60%] translate-y-[-50%] start-[160px]"
+            onClick={prevSlideHandler}
+          >
+            <PrevArrow />
+          </span>
+          <span
+            className=" xl:absolute xl:top-[60%] translate-y-[-50%] end-[160px] rotate-180"
+            onClick={nextSlideHandler}
+          >
+            <NextArrow />
+          </span>
         </div>
       </div>
     </div>

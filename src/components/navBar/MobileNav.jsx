@@ -70,12 +70,13 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
                           </span>
                         )}
                     </span>
+              
                   </Link>
               
-                    {value.title !== "Home" &&
+                          {value.title !== "Home" &&
                       value.title !== "Results" &&
                       value.title !== "Contact" && (
-                        <div>
+                        <span>
                           {value.option.map((subValue, i) => {
                             return (
                               <span
@@ -86,7 +87,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
                               </span>
                             );
                           })}
-                        </div>
+                        </span>
                       )}
                 </div>
               );

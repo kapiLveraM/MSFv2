@@ -12,7 +12,7 @@ const CommonInput = ({
   type,
 }) => {
   return (
-    <div className="">
+    <div>
       <label className="block mb-2 font-Poppins font-normal md:text-lg text-base text-lightBlack">
         {label}
       </label>

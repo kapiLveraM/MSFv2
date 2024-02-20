@@ -7,7 +7,11 @@ import CustomRadio from "./common/CustomRadio";
 import CommonSelect from "./common/CommonSelect";
 import CommonTextArea from "./common/CommonTextArea";
 import ButtonMain from "./common/button/ButtonMain";
-import { CommonVecto, GetUpdateVector, GetUpdateVectorSmall } from "./common/Icons";
+import {
+  CommonVecto,
+  GetUpdateVector,
+  GetUpdateVectorSmall,
+} from "./common/Icons";
 
 const GetUpdate = () => {
   const form = useRef();
@@ -79,29 +83,47 @@ const GetUpdate = () => {
   return (
     <div className=" bg-white pt-20 lg:pt-36 relative">
       <div className="absolute top-[28%] hidden xl:block">
-        <GetUpdateVector/>
+        <GetUpdateVector />
       </div>
       <div className="absolute bottom-[10%] right-0 hidden xl:block">
-        <GetUpdateVectorSmall/>
+        <GetUpdateVectorSmall />
       </div>
       <div className="xl:max-w-[845px] mx-auto xl:px-0 px-3">
-          <div className=" flex items-end justify-center">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="-1000"
+          className=" flex items-end justify-center"
+        >
           <CommonVecto />
           <p className=" text-lg font-Poppins text-main font-medium leading-none ms-2">
             GET UPDATED WITH US
           </p>
         </div>
-        <h2 className=" font-bahnschrift font-light text-black text-4xl md:text-5xl mt-3 text-center max-w-[882px] mx-auto">
+        <h2
+          data-aos="fade-right"
+          data-aos-offset="-1000"
+          className=" font-bahnschrift font-light text-black text-4xl md:text-5xl mt-3 text-center max-w-[882px] mx-auto"
+        >
           Request
           <span className=" text-orange font-bold">Your Free</span>
           Consultation
         </h2>
-        <p className=" font-Poppins font-normal text-base text-black opacity-70 max-w-[649px] mx-auto text-center mt-4">
+        <p
+          data-aos="fade-left"
+          data-aos-offset="-1000"
+          className=" font-Poppins font-normal text-base text-black opacity-70 max-w-[649px] mx-auto text-center mt-4"
+        >
           Send us an email or call
           <span className=" text-orange">(800) 700-8450</span> for answers to
           anything and everything you would like to know about your case.
         </p>
-        <form ref={form} onSubmit={FormSubmit} className=" mt-12">
+        <form
+          data-aos="fade-up"
+          data-aos-offset="-1000"
+          ref={form}
+          onSubmit={FormSubmit}
+          className=" mt-12"
+        >
           <div className="flex flex-wrap">
             <div className=" w-6/12 relative pb-7 md:pe-5 pe-2">
               <CommonInput
@@ -161,7 +183,7 @@ const GetUpdate = () => {
                 error={error}
               />
             </div>
-            <div className="">
+            <div>
               <p className=" text-black md:text-2xl text-xl font-Poppins font-medium mb-6">
                 Institution Involved <span className=" text-slat">*</span>
               </p>
@@ -198,7 +220,7 @@ const GetUpdate = () => {
                 not be sent through this form. All information provided will be
                 kept strictly confidential.
               </p>
-              <div className=" flex items-center gap-5 mt-7 relative items-center">
+              <div className=" flex items-center gap-5 mt-7 relative">
                 <div className=" relative">
                   <input
                     type="checkbox"

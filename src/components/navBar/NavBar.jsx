@@ -33,74 +33,75 @@ const NavBar = () => {
       />
 
       {/* Navigation bar */}
-     <nav className="bg-black py-4">
-  <div className="container xl:max-w-[1140px] mx-auto px-5 sm:px-3">
-    <div className="flex justify-between items-center">
-      {/* Logo */}
-      <div className="mt-0">
-        <Link href="#" className="w-full max-w-[150px] md:max-w-[210px]">
-          <MainLogo />
-        </Link>
-      </div>
-      {/* Navigation links */}
+      <nav className="bg-black py-4">
+        <div className="container xl:max-w-[1140px] mx-auto px-5 sm:px-3">
+          <div className="flex justify-between items-center">
+            {/* Logo */}
+            <div className="mt-0">
+              <Link href="#" className="w-full max-w-[150px] md:max-w-[210px]">
+                <MainLogo />
+              </Link>
+            </div>
+            {/* Navigation links */}
 
-     <div className="hidden lg:flex gap-7">
-  {NavLinks.map((value, index) => {
-    return (
-      <div key={index} className="relative">
-        <Link
-          href="#About"
-          className="font-Poppins group hover:stroke-inherit  transition-all ease-in-out duration-200 font-normal text-base text-white"
-        >
-          <span className="flex justify-center items-center gap-1">
-            {value.title}
-            {/* Check if the current link is not "Home", "Results", or "Contact" */}
-            {value.title !== "Home" && value.title !== "Results" && value.title !== "Contact" && (
-              <span className="block">
-                <DropDwonArrow />
-              </span>
-            )}
-          </span>
-        </Link>
-         {value.title !== "Home" && value.title !== "Results" && value.title !== "Contact" &&  (
-            <div>
-              {value.option.map((subValue, i) => {
+            <div className="hidden lg:flex gap-7">
+              {NavLinks.map((value, index) => {
                 return (
-                  <span
-                    key={i}
-                    className="group-hover:opacity-100 absolute opacity-0 transition-all ease-in-out duration-200 flex flex-col bg-black top-8 py-2 px-2 rounded-md"
-                  >
-                    <Link href="#">{subValue.links}</Link>
-                    <Link href="#">{subValue.links}</Link>
-                    <Link href="#">{subValue.links}</Link>
-                  </span>
+                  <div key={index} className="relative">
+                    <Link
+                      href="#About"
+                      className="font-Poppins group hover:stroke-inherit  transition-all ease-in-out duration-200 font-normal text-base text-white"
+                    >
+                      <span className="flex justify-center items-center gap-1">
+                        {value.title}
+                        {/* Check if the current link is not "Home", "Results", or "Contact" */}
+                        {value.title !== "Home" &&
+                          value.title !== "Results" &&
+                          value.title !== "Contact" && (
+                            <span className="block">
+                              <DropDwonArrow />
+                            </span>
+                          )}
+                      </span>
+                    </Link>
+                    {value.title !== "Home" &&
+                      value.title !== "Results" &&
+                      value.title !== "Contact" && (
+                        <span>
+                          {value.option.map((subValue, i) => {
+                            return (
+                              <span
+                                key={i}
+                                className="group-hover:opacity-100 absolute opacity-0 transition-all ease-in-out duration-200 flex flex-col bg-black top-8 py-2 px-2 rounded-md"
+                              >
+                                <Link href="#">{subValue.links}</Link>
+                                <Link href="#">{subValue.links}</Link>
+                                <Link href="#">{subValue.links}</Link>
+                              </span>
+                            );
+                          })}
+                        </span>
+                      )}
+                  </div>
                 );
               })}
             </div>
-          )}
-      </div>
-    );
-  })}
-</div>
-
-      {/* Button */}
-
-      {/* Toggle button for mobile */}
-      <div className="flex items-center lg:hidden relative z-[200] sm:me-0 ">
-        <div className="border_gradient h-[27px] mx-6 lg:mx-3"></div>
-        <button
-          onClick={() => setActiveNavOverlay(!activeNavOverlay)}
-          type="button"
-          className="inline-flex items-center justify-center rounded-md w-[33px]"
-          aria-label="toggle-button"
-        >
-          {isToggleIconVisible ? <HeaderCross /> : <OpenNav />}
-        </button>
-      </div>
-    </div>
-  </div>
-</nav>
-
+            {/* Button */}
+            {/* Toggle button for mobile */}
+            <div className="flex items-center lg:hidden relative z-[200] sm:me-0 ">
+              <div className="border_gradient h-[27px] mx-6 lg:mx-3"></div>
+              <button
+                onClick={() => setActiveNavOverlay(!activeNavOverlay)}
+                type="button"
+                className="inline-flex items-center justify-center rounded-md w-[33px]"
+                aria-label="toggle-button"
+              >
+                {isToggleIconVisible ? <HeaderCross /> : <OpenNav />}
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </>
   );
 };
