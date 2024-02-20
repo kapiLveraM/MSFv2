@@ -6,7 +6,7 @@ import Link from "next/link";
 const WePursue = () => {
   return (
     <div className=" mb-20 lg:mb-[118px]">
-      <div className="container xl:max-w-[1140px] px-3 mx-auto">
+      <div className="container xl:max-w-[1140px] px-5 xl:px-0 mx-auto">
         <div className=" flex flex-col-reverse lg:flex-row justify-center items-center flex-wrap">
           <div className="  lg:w-7/12 mt-6 lg:mt-0">
             <h3

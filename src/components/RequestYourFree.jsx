@@ -12,7 +12,7 @@ const RequestYourFree = () => {
 
   return (
     <div className=" mt-[139px]">
-      <div className="container xl:max-w-[1140px] px-3 mx-auto ">
+      <div className="container xl:max-w-[1140px] px-5 xl:px-0 mx-auto ">
         <div className=" flex items-end justify-center">
           <CommonVecto />
           <p className=" text-lg font-Poppins text-main font-medium leading-none ms-2">

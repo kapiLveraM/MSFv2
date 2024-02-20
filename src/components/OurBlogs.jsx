@@ -55,7 +55,7 @@ const OurBlogs = () => {
       >
         R BLOGS
       </p>
-      <div className="overflow-hidden relative">
+      <div className=" relative xl:max-w-[1140px] mx-auto">
         <div className="container xl:max-w-[1140px] px-5 xl:px-0 mx-auto overflow-hidden">
           <div className=" flex items-end justify-center">
             <CommonVecto />
@@ -68,63 +68,61 @@ const OurBlogs = () => {
             <span className=" text-orange font-bold"> Featured </span>
             Stories
           </h2>
-          <div className="relative ">
-            <Slider
-              {...cardSlider}
-              ref={sliderRef}
-              className="blog pb-11 sm:pb-20 lg:pb-[140px]"
-            >
-              {Blogs.map((value, index) => (
-                <div key={index} className="w-4/12 pt-16 px-3 ">
-                  <div className=" mt-0 border border-whisper px-2 pt-3 pb-[38px] rounded">
-                    <Image
-                      loading="lazy"
-                      width={341}
-                      height={227}
-                      src={value.image}
-                      alt="cardImages"
-                      className=" w-full"
-                    />
-                    <div className=" flex items-center mt-5">
-                      <div className=" flex items-center gap-1">
-                        {value.icon}
-                        <p className=" font-Poppins font-medium text-sm text-black">
-                          {value.date}
-                        </p>
+          <div className=" relative">
+            <div className="relative ">
+              <Slider {...cardSlider} ref={sliderRef} className="blog sm:pb-12">
+                {Blogs.map((value, index) => (
+                  <div key={index} className="w-4/12 pt-16 px-3 ">
+                    <div className=" mt-0 border border-whisper px-2 pt-3 pb-[38px] rounded">
+                      <Image
+                        loading="lazy"
+                        width={341}
+                        height={227}
+                        src={value.image}
+                        alt="cardImages"
+                        className=" w-full"
+                      />
+                      <div className=" flex items-center mt-5">
+                        <div className=" flex items-center gap-1">
+                          {value.icon}
+                          <p className=" font-Poppins font-medium text-sm text-black">
+                            {value.date}
+                          </p>
+                        </div>
+                        <p className=" text-[#8C8C8C] mx-3">|</p>
+                        <div className=" flex items-center gap-1">
+                          {value.iconComment}
+                          <p className=" font-Poppins font-medium text-sm text-black">
+                            {value.Comment}
+                          </p>
+                        </div>
                       </div>
-                      <p className=" text-[#8C8C8C] mx-3">|</p>
-                      <div className=" flex items-center gap-1">
-                        {value.iconComment}
-                        <p className=" font-Poppins font-medium text-sm text-black">
-                          {value.Comment}
-                        </p>
-                      </div>
+                      <p className=" font-bahnschrift font-normal text-base xl:text-[17px] text-black mt-4">
+                        {value.description}
+                      </p>
+                      <Link
+                        href="#"
+                        className=" font-medium text-lg text-black font-Poppins flex items-center gap-1 mt-8"
+                      >
+                        Read More <ReadMoreArrow />
+                      </Link>
+                      <div className="absolute boxBottmBoder bottom-[-6px] w-[229px] h-[10px] start-[50%] bg-transparent translate-x-[-50%]  transition-all ease-linear duration-300"></div>
                     </div>
-                    <p className=" font-bahnschrift font-normal text-base xl:text-[17px] text-black mt-4">
-                      {value.description}
-                    </p>
-                    <Link
-                      href="#"
-                      className=" font-medium text-lg text-black font-Poppins flex items-center gap-1 mt-8"
-                    >
-                      Read More <ReadMoreArrow />
-                    </Link>
-                    <div className="absolute boxBottmBoder bottom-[-6px] w-[229px] h-[10px] start-[50%] bg-transparent translate-x-[-50%]  transition-all ease-linear duration-300"></div>
                   </div>
-                </div>
-              ))}
-            </Slider>
+                ))}
+              </Slider>
+            </div>
           </div>
         </div>
         <div className=" mt-14 xl:mt-0 flex items-center justify-center w-full gap-3 ">
           <span
-            className=" xl:absolute  xl:top-[50%] translate-y-[-50%] start-[150px]"
+            className=" xl:absolute  xl:top-[50%] translate-y-[-50%] start-[-60px]"
             onClick={prevSlideHandler}
           >
             <PrevArrow />
           </span>
           <span
-            className=" xl:absolute xl:top-[50%] translate-y-[-50%] end-[150px] rotate-180"
+            className=" xl:absolute xl:top-[50%] translate-y-[-50%] end-[-60px] rotate-180"
             onClick={nextSlideHandler}
           >
             <NextArrow />

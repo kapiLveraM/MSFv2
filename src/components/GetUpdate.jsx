@@ -248,7 +248,7 @@ const GetUpdate = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center mt-[50px] mb-[99px]">
+          <div className="flex justify-center mt-[50px] mb-11 sm:mb-20 lg:mb-[99px]">
             <ButtonMain
               customStyles="!py-[18px] !px-[35px]"
               title="Send Message"
