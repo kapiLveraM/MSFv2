@@ -116,13 +116,13 @@ const OurBlogs = () => {
         </div>
         <div className=" mt-14 xl:mt-0 flex items-center justify-center w-full gap-3 ">
           <span
-            className=" xl:absolute  xl:top-[50%] translate-y-[-50%] start-[-60px]"
+            className=" xl:absolute  xl:top-[50%] translate-y-[-50%] start-[-60px] cursor-pointer"
             onClick={prevSlideHandler}
           >
             <PrevArrow />
           </span>
           <span
-            className=" xl:absolute xl:top-[50%] translate-y-[-50%] end-[-60px] rotate-180"
+            className=" xl:absolute xl:top-[50%] translate-y-[-50%] end-[-60px] rotate-180 cursor-pointer"
             onClick={nextSlideHandler}
           >
             <NextArrow />

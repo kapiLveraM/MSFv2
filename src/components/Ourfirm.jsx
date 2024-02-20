@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Ourfirm = () => {
   return (
-    <div className=" relative overflow-hidden mt-11 sm:mt-20 xl:mt-0 pb-[103px]">
+    <div className=" relative overflow-hidden pb-[103px] pt-11 sm:pt-20 lg:pt-[102px]">
       <div className="container xl:max-w-[1140px] mx-auto px-5 sm:px-3 ">
         <div className=" flex items-end justify-center">
           <CommonVecto />

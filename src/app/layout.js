@@ -4,8 +4,14 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "MSFv2",
-  description: "America’s Leading Sexual Abuse Law Firm",
+  metadataBase: "https://my-app-eta-weld.vercel.app/",
+  title: "MSF",
+  description: "America's Premier Law Firm for Sexual Abuse Cases",
+  openGraph: {
+    title: "MSF",
+    description: "America's Premier Law Firm for Sexual Abuse Cases",
+    images: ["/MetaTag.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
