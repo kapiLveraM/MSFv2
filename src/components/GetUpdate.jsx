@@ -81,14 +81,14 @@ const GetUpdate = () => {
   };
 
   return (
-    <div className=" bg-white pt-20 lg:pt-36 relative">
+    <div className=" bg-white pt-11 sm:pt-20 lg:pt-[139px] relative">
       <div className="absolute top-[28%] hidden xl:block">
         <GetUpdateVector />
       </div>
       <div className="absolute bottom-[10%] right-0 hidden xl:block">
         <GetUpdateVectorSmall />
       </div>
-      <div className="xl:max-w-[845px] mx-auto xl:px-0 px-3">
+      <div className=" container xl:max-w-[845px] mx-auto xl:px-0 px-5">
         <div
           data-aos="fade-up"
           data-aos-offset="-1000"
@@ -111,10 +111,10 @@ const GetUpdate = () => {
         <p
           data-aos="fade-left"
           data-aos-offset="-1000"
-          className=" font-Poppins font-normal text-base text-black opacity-70 max-w-[649px] mx-auto text-center mt-4"
+          className=" font-Poppins font-normal text-base text-black !opacity-70 max-w-[580px] mx-auto text-center mt-4"
         >
           Send us an email or call
-          <span className=" text-orange">(800) 700-8450</span> for answers to
+          <span className=" text-orange"> (800) 700-8450 </span> for answers to
           anything and everything you would like to know about your case.
         </p>
         <form
@@ -125,7 +125,7 @@ const GetUpdate = () => {
           className=" mt-12"
         >
           <div className="flex flex-wrap">
-            <div className=" w-6/12 relative pb-7 md:pe-5 pe-2">
+            <div className=" w-full sm:w-6/12 relative pb-7 md:pe-5 pe-2">
               <CommonInput
                 type="text"
                 placeholder="First Name"
@@ -137,7 +137,7 @@ const GetUpdate = () => {
                 label="First Name"
               />
             </div>
-            <div className=" w-6/12 relative pb-7 md:ps-5 ps-2">
+            <div className=" w-full sm:w-6/12 relative pb-7 md:ps-5 ps-2">
               <CommonInput
                 type="text"
                 placeholder="Last Name"
@@ -149,7 +149,7 @@ const GetUpdate = () => {
                 label="Last Name"
               />
             </div>
-            <div className=" w-6/12 relative pb-7 md:pe-5 pe-2">
+            <div className=" w-full sm:w-6/12 relative pb-7 md:pe-5 pe-2">
               <CommonInput
                 type="number"
                 placeholder="Phone Number"
@@ -161,7 +161,7 @@ const GetUpdate = () => {
                 label="Phone Number"
               />
             </div>
-            <div className=" w-6/12 relative pb-7 md:ps-5 ps-2">
+            <div className=" w-full sm:w-6/12 relative pb-7 md:ps-5 ps-2">
               <CommonInput
                 type="email"
                 placeholder="Email address"
@@ -184,7 +184,7 @@ const GetUpdate = () => {
               />
             </div>
             <div>
-              <p className=" text-black md:text-2xl text-xl font-Poppins font-medium mb-6">
+              <p className=" text-black md:text-2xl text-xl font-Poppins font-medium mb-[6px]">
                 Institution Involved <span className=" text-slat">*</span>
               </p>
               <CustomRadio
@@ -213,12 +213,15 @@ const GetUpdate = () => {
               <p className=" font-bold text-orange font-Poppins md:text-2xl text-xl mb-2">
                 Disclaimer*
               </p>
-              <p className=" text-lightBlack font-normal font-Poppins md:text-base text-sm">
+              <p className=" text-lightBlack font-normal font-Poppins md:text-base text-sm max-w-[752px]">
                 The use of this website or contact form to communicate with this
                 firm or any of its attorneys/members does not establish an
                 attorney-client relationship. Time-sensitive information should
-                not be sent through this form. All information provided will be
-                kept strictly confidential.
+                not be sent through this form.{" "}
+                <span className=" font-semibold">
+                  {" "}
+                  All information provided will be kept strictly confidential.
+                </span>
               </p>
               <div className=" flex items-center gap-5 mt-7 relative">
                 <div className=" relative">
@@ -231,7 +234,7 @@ const GetUpdate = () => {
                         checkBox: !prevState.checkBox,
                       }))
                     }
-                    className="radio_main w-6 h-5"
+                    className="radio_main w-6 h-5 mt-[6px]"
                   />
                   {error && formData.checkBox === false && (
                     <p className="text-red-900 uppercase text-[12px] font-Bahnschrift font-normal flex items-start absolute bottom-[-15px] text-nowrap">
@@ -239,14 +242,17 @@ const GetUpdate = () => {
                     </p>
                   )}
                 </div>
-                <p className=" font-Poppins font-semibold md:text-lg text-base text-slat">
+                <p className=" font-Poppins font-semibold md:text-lg text-base text-main">
                   I HAVE READ THIS DISCLAIMER
                 </p>
               </div>
             </div>
           </div>
-          <div className="flex justify-center mt-12 mb-24">
-            <ButtonMain title="Send Message" />
+          <div className="flex justify-center mt-[50px] mb-[99px]">
+            <ButtonMain
+              customStyles="!py-[18px] !px-[35px]"
+              title="Send Message"
+            />
           </div>
         </form>
       </div>

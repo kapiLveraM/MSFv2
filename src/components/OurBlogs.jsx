@@ -47,7 +47,7 @@ const OurBlogs = () => {
   };
 
   return (
-    <div className=" mb-20 xl:mb-[106px] relative ">
+    <div className="  relative">
       <p
         data-aos="fade-right"
         data-aos-offset="-1000"
@@ -56,7 +56,7 @@ const OurBlogs = () => {
         R BLOGS
       </p>
       <div className="overflow-hidden relative">
-        <div className="container xl:max-w-[1140px] px-3 mx-auto overflow-hidden">
+        <div className="container xl:max-w-[1140px] px-5 xl:px-0 mx-auto overflow-hidden">
           <div className=" flex items-end justify-center">
             <CommonVecto />
             <p className=" text-lg font-Poppins text-main font-medium leading-none ms-2">
@@ -68,10 +68,14 @@ const OurBlogs = () => {
             <span className=" text-orange font-bold"> Featured </span>
             Stories
           </h2>
-          <div data-aos="fade-up" data-aos-offset="-1000" className="relative ">
-            <Slider {...cardSlider} ref={sliderRef} className="blog">
+          <div className="relative ">
+            <Slider
+              {...cardSlider}
+              ref={sliderRef}
+              className="blog pb-11 sm:pb-20 lg:pb-[140px]"
+            >
               {Blogs.map((value, index) => (
-                <div key={index} className="w-4/12 pt-16 px-3 sm:px-2 ">
+                <div key={index} className="w-4/12 pt-16 px-3 ">
                   <div className=" mt-0 border border-whisper px-2 pt-3 pb-[38px] rounded">
                     <Image
                       loading="lazy"
@@ -114,13 +118,13 @@ const OurBlogs = () => {
         </div>
         <div className=" mt-14 xl:mt-0 flex items-center justify-center w-full gap-3 ">
           <span
-            className=" xl:absolute  xl:top-[60%] translate-y-[-50%] start-[160px]"
+            className=" xl:absolute  xl:top-[50%] translate-y-[-50%] start-[150px]"
             onClick={prevSlideHandler}
           >
             <PrevArrow />
           </span>
           <span
-            className=" xl:absolute xl:top-[60%] translate-y-[-50%] end-[160px] rotate-180"
+            className=" xl:absolute xl:top-[50%] translate-y-[-50%] end-[150px] rotate-180"
             onClick={nextSlideHandler}
           >
             <NextArrow />

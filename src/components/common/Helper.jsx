@@ -140,21 +140,18 @@ export const Globa = [
     shotDescription: "Roman Catholic Arch Diocese Sex Abuse Cases",
     description:
       "Over $1B in recoveries against the Roman Catholic Church on behalf of victims of sexual abuse by priests, volunteers, religious and employees.",
-    image: "/assets/images/global.png",
   },
   {
     title: "$852M",
     shotDescription: "USG Dr. Georgga=e Tyndall Sex Abuse Case",
     description:
       "George Tyndall survivors and their attorneys announce a historic $852M global settlement in USC sec abuse case.",
-    image: "/assets/images/global.png",
   },
   {
     title: "$500M",
     shotDescription: "Micgigan State University, Larry Nassar Sx Abuse Case",
     description:
       "333 sex abuse claims against Michigan state University for the abuse of child and young adult athletes by former MSU and Olympic Team doctor Larry Nassar.",
-    image: "/assets/images/global.png",
   },
 ];
 export const Contact = [

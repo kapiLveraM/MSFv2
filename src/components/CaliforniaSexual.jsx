@@ -25,14 +25,14 @@ const CaliforniaSexual = () => {
       <p
         data-aos="fade-right"
         data-aos-offset="-1000"
-        className=" font-Poppins font-black text-[108px] text-white !opacity-5 absolute right-0 top-[-10px] hidden md:block"
+        className=" font-Poppins font-black text-[108px] text-white !opacity-5 absolute right-[-80px] top-[-10px] hidden md:block"
       >
-        Who Ar
+        Who Are
       </p>
       <div className=" absolute top-[60%] right-[-3px] hidden sm:block">
         <VectorC />
       </div>
-      <div className="container xl:max-w-[1140px] px-3 mx-auto">
+      <div className="container xl:max-w-[1140px] px-5 xl:px-0 mx-auto">
         <div className=" flex flex-col justify-center items-center">
           <h2
             data-aos="fade-up"
@@ -49,7 +49,7 @@ const CaliforniaSexual = () => {
           <p
             data-aos="fade-up"
             data-aos-offset="-1000"
-            className=" max-w-[868px] mx-auto text-center text-white font-Poppins opacity-70 mt-6"
+            className=" max-w-[868px] mx-auto text-center text-white font-Poppins !opacity-70 mt-6"
           >
             No case is too challenging for our lawyers. When we say that we
             aren’t afraid to stand up to any major institution, we have the
@@ -61,26 +61,30 @@ const CaliforniaSexual = () => {
           <p
             data-aos="fade-up"
             data-aos-offset="-1000"
-            className=" max-w-[868px] mx-auto text-center text-white font-Poppins opacity-70 mt-6"
+            className=" max-w-[850px] mx-auto text-center text-white font-Poppins !opacity-70 mt-6"
           >
             If you or a loved one is a survivor of sexual violence and abuse,
-            please
+            please {""}
             <span className=" font-bold text-main opacity-100">
               contact our law offices in Southern California
-            </span>
-            for a free, 100% confidential consultation regarding your case.
+            </span>{" "}
+            {""} for a free, 100% confidential consultation regarding your case.
           </p>
           <p
             data-aos="fade-up"
             data-aos-offset="-1000"
-            className=" max-w-[868px] mx-auto text-center text-white font-Poppins opacity-70 mt-6"
+            className=" max-w-[868px] mx-auto text-center text-white font-Poppins !opacity-70 mt-6"
           >
             You deserve closure, and any responsible parties deserve justice for
             their despicable actions. Let a trusted California sexual abuse
             lawyer at our firm help you today.
           </p>
           <div data-aos="fade-up" data-aos-offset="-1000" className=" mt-12">
-            <ButtonMain type="submit" title="Request A Free Consultation" />
+            <ButtonMain
+              customStyles="!py-[13px] !px-[24px]"
+              type="submit"
+              title="Request A Free Consultation"
+            />
           </div>
         </div>
       </div>

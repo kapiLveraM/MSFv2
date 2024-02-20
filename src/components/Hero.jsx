@@ -31,12 +31,12 @@ const Hero = () => {
         <HeroVecto />
       </div>
       <div className=" bg-hero bg-cover bg-no-repeat bg-[100%_100%] overflow-hidden">
-        <div className="container xl:max-w-[1140px] mx-auto px-5 sm:px-3 mt-20 md:mt-[106px]">
+        <div className="container xl:max-w-[1140px] mx-auto px-5 xl:px-0 mt-20 md:mt-[106px]">
           <div className=" relative">
             <h1
               data-aos="fade-right"
               data-aos-offset="100"
-              className="font-bahnschrift font-bold text-5xl sm:text-6xl lg:text-7xl text-white leading-[122%] lg:leading-[96px] max-w-[906px] relative z-10"
+              className="font-bahnschrift font-bold text-4xl sm:text-6xl lg:text-7xl text-white leading-[122%] lg:leading-[96px] max-w-[906px] relative z-10"
             >
               America’s Leading
               <span className=" font-light text-orange"> Sexual Abuse</span> Law
@@ -50,11 +50,11 @@ const Hero = () => {
               className=" absolute top-0 right-[72px] hidden md:block rotate_keyFram"
             />
             <Image
-              width={280}
+              width={335}
               height={2}
               src="/assets/images/hero/LineBig.svg"
               alt="Video"
-              className=" absolute top-[50px] right-[130px]"
+              className=" absolute top-[50px] right-[130px] hidden xl:block"
             />
           </div>
           <div className=" flex flex-wrap flex-col-reverse md:flex-row mt-9 items-center">
@@ -76,7 +76,11 @@ const Hero = () => {
                 className=" absolute  hidden md:block md:top-[120px] left-0"
               />
               <div className=" mt-8 md:mt-16">
-                <ButtonMain type="submit" title="Request A Free Consultation" />
+                <ButtonMain
+                  customStyles="!py-[18px] !px-[33px]"
+                  type="submit"
+                  title="Request A Free Consultation"
+                />
               </div>
             </div>
             <div className=" w-full md:w-6/12 lg:w-7/12 relative">

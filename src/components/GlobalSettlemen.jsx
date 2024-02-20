@@ -1,63 +1,74 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 import { Globa } from "./common/Helper";
 import { CommonVectorDot, VectorC } from "./common/Icons";
 
 const GlobalSettlement = () => {
+  const settingsFor = {
+    dots: false,
+    arrow: false,
+    loop: true,
+    slidesToShow: 2.5,
+    slidesToScroll: 1,
+    infinite: true,
+    vertical: true,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 725,
+        settings: {
+          loop: false,
+        },
+      },
+    ],
+  };
   const sliderRef = useRef(null);
 
-  const goToSlide = (slide) => {
-    sliderRef.current.slickGoTo(slide);
-  };
-
-  const settingsFor = {
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots: false,
-    centerMode: true,
-    arrow: false,
-    centerPeading: "6px",
-    focusOnSelect: true,
-    vertical: true,
-    verticalSwiping: true,
-    asNavFor: ".slider-nav",
-  };
-
-  const settingsNav = {
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots: false,
-    centerMode: true,
-    focusOnSelect: true,
-    vertical: true,
-    verticalSwiping: true,
-    asNavFor: ".slider-for",
-  };
-
+  useEffect(() => {
+    const slider = sliderRef.current;
+    if (slider) {
+      // Add mouse wheel scrolling functionality
+      slider.innerSlider.list.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        if (e.deltaY > 0) {
+          slider.slickNext();
+        } else {
+          slider.slickPrev();
+        }
+      });
+    }
+  }, []);
   return (
     <div className="bg-black py-8 mb-6 relative overflow-hidden ">
+      <p className=" font-Poppins font-black text-[108px] text-white opacity-5 absolute right-[-80px] top-[-12%] hidden md:block">
+        ABOUT
+      </p>
       <div className=" absolute right-[-5px] bottom-44 hidden lg:block">
         <CommonVectorDot />
       </div>
       <div className=" absolute left-[-5px] top-[45%] hidden xl:block">
         <VectorC />
       </div>
-      <div className="Global-Settlement w-full h-40 absolute z-10 top-7"></div>
-      <div className="Global-Settlement w-full h-40 absolute z-10 bottom-0 rotate-180 hidden lg:block"></div>
-      <div className="container xl:max-w-[1140px] mx-auto px-3">
-        <div className="flex flex-wrap justify-between items-center">
-          <div className=" lg:w-6/12">
+      <Image
+        loading="lazy"
+        width={331}
+        height={173}
+        src="/assets/images/Attorneys/AttorneyWhiteLineBox.png"
+        alt="Representation"
+        className=" absolute right-[-3%] top-[-10%] hidden lg:block"
+      />
+
+      <div className="container xl:max-w-[1140px] mx-auto px-5 xl:px-0 relative">
+        <div className="flex flex-wrap justify-between items-center ">
+          <div className=" lg:w-6/12 relative">
+            <div className="Global-Settlement w-full h-40 absolute z-10 top-[-3px]"></div>
+            <div className="Global-Settlement w-full h-40 absolute z-10 bottom-[-3px] rotate-180 hidden lg:block"></div>
             <Slider
               {...settingsFor}
               ref={sliderRef}
-              className="slider-for global "
+              className="slider-for global"
             >
               {Globa.map((value, index) => (
                 <div key={index} className=" px-5">
@@ -70,7 +81,7 @@ const GlobalSettlement = () => {
                         {value.shotDescription}
                       </p>
                     </div>
-                    <p className="font-Poppins text-sm md:text-base max-w-[473px] text-white  opacity-70 font-normal mt-3">
+                    <p className="font-Poppins text-sm md:text-base max-w-[500px] text-white  opacity-70 font-normal mt-3">
                       {value.description}
                     </p>
                     <div className="absolute top-[50%] w-[10px] h-[120px] start-0 bg-transparent translate-y-[-50%] transition-all ease-linear duration-300"></div>
@@ -80,21 +91,14 @@ const GlobalSettlement = () => {
             </Slider>
           </div>
           <div className=" lg:w-5/12 ">
-            <Slider {...settingsNav} className="slider-nav">
-              {Globa.map((value, index) => (
-                <div
-                  key={index}
-                  className="mx-2 flex justify-center items-center px-4 py-6"
-                >
-                  <Image
-                    width={477}
-                    height={461}
-                    src={value.image}
-                    alt="image"
-                  />
-                </div>
-              ))}
-            </Slider>
+            <div className="mx-2 flex justify-center items-center px-4 py-6">
+              <Image
+                width={477}
+                height={461}
+                src="/assets/images/global.png"
+                alt="image"
+              />
+            </div>
             <p className=" font-normal font-bahnschrift text-3xl text-white text-center mt-7">
               Global Settlement’s
             </p>

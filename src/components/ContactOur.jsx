@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const ContactOur = () => {
   return (
-    <div className=" bg-black pt-14 pb-[74px] relative overflow-hidden">
+    <div className=" bg-black pt-14 pb-[74px] relative overflow-hidden ">
       <div className=" absolute right-[-10px] top-[20%] hidden lg:block">
         <VectorC />
       </div>
@@ -25,16 +25,16 @@ const ContactOur = () => {
         alt="LosAngeles"
         className=" absolute bottom-0 right-[-40px] hidden xl:block"
       />
-      <div className="container xl:max-w-[1140px] px-3 mx-auto relative z-50">
+      <div className="container xl:max-w-[1140px] px-5 xl:px-0 mx-auto relative z-50">
         <h2
           data-aos="fade-right"
           data-aos-offset="-1000"
           className=" font-bahnschrift font-light text-white text-4xl md:text-5xl mt-3 text-center max-w-[900px] mx-auto"
         >
-          Contact Our
+          Contact Our {""}
           <span className=" text-orange font-bold">
             California Sexual Abuse
-          </span>
+          </span>{" "}
           Attorneys Today!
         </h2>
         <div
@@ -52,32 +52,37 @@ const ContactOur = () => {
               >
                 <div className="bg-ivory px-5 border border-ivory py-9 sm:min-h-[311px] w-full max-w-[364px] rounded flex flex-col justify-between group hover:border-main boxShadowWhy shadow-md transition-all  ease-in-out duration-300 relative">
                   <div className=" mt-0">
-                    <p className="font-Poppins font-semibold text-xl text-main">
+                    <p className="font-Poppins font-semibold text-[19px] text-main">
                       {value.title}
                     </p>
-                    <p className="font-Poppins font-normal text-base text-white opacity-70 mt-2">
+                    <p className="font-Poppins font-normal text-base text-white opacity-70 mt-2 max-w-[280px] mx-auto text-center">
                       {value.description}
                     </p>
                     <div className="flex flex-col justify-center items-center">
                       {value.pathP && (
                         <Link
-                          href={value.pathP}
+                          target="_black"
+                          href={`tel:${value.pathP}`}
                           className="text-white mt-5 font-Poppins font-normal text-lg inline-block"
                         >
+                          {""}
                           <span className="font-semibold text-orange">
                             {value.phone}
-                          </span>
+                          </span>{" "}
                           {value.pathP}
                         </Link>
                       )}
                       {value.pathTf && (
                         <Link
-                          href={value.pathTf}
-                          className="text-white mt-2 font-Poppins font-normal text-lg inline-block"
+                          target="_black"
+                          href={`tel:${value.pathTf}`}
+                          className="text-white mt-2 font-Poppins font-normal
+                          text-lg inline-block"
                         >
+                          {""}
                           <span className="font-semibold text-orange">
                             {value.telephone}
-                          </span>
+                          </span>{" "}
                           {value.pathP}
                         </Link>
                       )}
@@ -86,7 +91,7 @@ const ContactOur = () => {
                   <div className=" mt-9 sm:mt-0">
                     <Link
                       href="#"
-                      className="font-Poppins text-lg font-medium text-main bg-white py-2 px-6 rounded-[500px] border border-main transition-all ease-in-out duration-300 group-hover:bg-main group-hover:text-white"
+                      className="inline-block font-Poppins text-lg font-medium text-main bg-white py-2 px-6 rounded-[500px] border border-main transition-all ease-in-out duration-300 group-hover:bg-main group-hover:text-white"
                     >
                       MAP
                     </Link>

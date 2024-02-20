@@ -59,7 +59,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
                     href="#About"
                     className="font-Poppins group opacity-80 hover:opacity-100 transition-all ease-in-out duration-200 font-normal text-base text-white"
                   >
-                          <span className="flex justify-center items-center gap-1">
+                    <span className="flex justify-center items-center gap-1">
                       {value.title}
                       {/* Check if the current link is not "Home", "Results", or "Contact" */}
                       {value.title !== "Home" &&
@@ -70,25 +70,24 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
                           </span>
                         )}
                     </span>
-              
                   </Link>
-              
-                          {value.title !== "Home" &&
-                      value.title !== "Results" &&
-                      value.title !== "Contact" && (
-                        <span>
-                          {value.option.map((subValue, i) => {
-                            return (
-                              <span
-                                key={i}
-                                className="group-hover:flex hidden transition-all ease-in-out duration-200  flex-col !bg-black top-8 py-2 px-2 rounded-md"
-                              >
-                                <Link href="#">{subValue.links}</Link>
-                              </span>
-                            );
-                          })}
-                        </span>
-                      )}
+                  {/* 
+                  {value.title !== "Home" &&
+                    value.title !== "Results" &&
+                    value.title !== "Contact" && (
+                      <span>
+                        {value.option.map((subValue, i) => {
+                          return (
+                            <span
+                              key={i}
+                              className="group-hover:flex hidden transition-all ease-in-out duration-200  flex-col !bg-black top-8 py-2 px-2 rounded-md"
+                            >
+                              <Link href="#">{subValue.links}</Link>
+                            </span>
+                          );
+                        })}
+                      </span>
+                    )} */}
                 </div>
               );
             })}

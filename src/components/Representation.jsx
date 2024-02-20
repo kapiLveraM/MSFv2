@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const Representation = () => {
   return (
-    <div className=" mb-20 lg:mb-[108px]">
-      <div className="container xl:max-w-[1140px] px-3 mx-auto">
+    <div className=" mb-11 mt-11 sm:mt-20 lg:mt-[116px] sm:mb-20 lg:mb-[108px]">
+      <div className="container xl:max-w-[1140px] px-5 xl:px-0 mx-auto">
         <div className=" flex justify-center flex-wrap">
           <div className=" lg:w-6/12 xl:w-5/12 ">
             <div
@@ -103,10 +103,10 @@ const Representation = () => {
             >
               <CheckAll />
               <p className=" font-normal font-Poppins text-lg text-black">
-                Cases of
-                <Link href="#" className=" text-orange underline">
+                Cases of {""}
+                <Link href="#" className=" text-orange underline inline-block">
                   online sexual
-                </Link>
+                </Link>{" "}
                 harassment
               </p>
             </div>
@@ -119,7 +119,8 @@ const Representation = () => {
               <p className=" font-normal font-Poppins text-lg text-black">
                 <Link href="#" className=" text-orange underline">
                   Elder sexual abuse
-                </Link>
+                </Link>{" "}
+                {""}
                 in nursing homes
               </p>
             </div>

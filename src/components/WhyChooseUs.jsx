@@ -4,7 +4,7 @@ import { WhyChoose } from "./common/Helper";
 
 const WhyChooseUs = () => {
   return (
-    <div className=" relative overflow-hidden  lg:pt-32 mt-20 mb-20 lg:mb-32">
+    <div className=" relative overflow-hidden pt-11 sm:pt-20 lg:pt-[136px] pb-11 sm:pb-20 lg:pb-[124px]">
       <div className=" absolute top-[29%] left-[-3px] hidden sm:block">
         <VectorC />
       </div>
@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
       >
         CHOOSE US
       </p>
-      <div className="container xl:max-w-[1140px] px-3 mx-auto ">
+      <div className="container xl:max-w-[1140px] px-4 xl:px-0 mx-auto ">
         <div className=" flex items-end justify-center">
           <CommonVecto />
           <p className=" text-lg font-Poppins text-main font-medium leading-none ms-2">
@@ -34,7 +34,7 @@ const WhyChooseUs = () => {
               >
                 <div
                   className={` mt-6 xl:mt-0 justify-center items-center flex flex-col group hover:border-main boxShadowWhy transition-all hover:translate-y-[-10px] ease-in-out duration-300 relative  py-10 border border-blackRussian min-h-[311px] rounded xl:max-w-[364px] w-full ${
-                    index === 2 ? "!px-3" : " px-4 sm:px-5"
+                    index === 2 ? "!px-4" : " px-4 sm:px-8"
                   }`}
                 >
                   {value.icon}

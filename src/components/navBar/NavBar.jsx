@@ -34,7 +34,7 @@ const NavBar = () => {
 
       {/* Navigation bar */}
       <nav className="bg-black py-4">
-        <div className="container xl:max-w-[1140px] mx-auto px-5 sm:px-3">
+        <div className="container xl:max-w-[1140px] mx-auto px-5 xl:px-0">
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="mt-0">
@@ -44,7 +44,7 @@ const NavBar = () => {
             </div>
             {/* Navigation links */}
 
-            <div className="hidden lg:flex gap-7">
+            <div className="hidden lg:flex gap-6">
               {NavLinks.map((value, index) => {
                 return (
                   <div key={index} className="relative">

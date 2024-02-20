@@ -18,7 +18,7 @@ const BrackingCases = () => {
   }, []);
 
   return (
-    <div className="bg-black my-20 xl:my-28 pt-[52px] py-24 overflow-hidden relative">
+    <div className="bg-black mt-11 sm:mt-20 lg:mt-[173px] pt-[52px] py-24 overflow-hidden relative">
       <div className=" absolute right-0 bottom-24 hidden lg:block">
         <brackingCasesVector />
       </div>
@@ -39,7 +39,7 @@ const BrackingCases = () => {
       <div
         data-aos="zoom-in-down"
         data-aos-offset="-1000"
-        className="container xl:max-w-[1140px] px-3 mx-auto"
+        className="container xl:max-w-[1140px] px-5 xl:px-0 mx-auto"
       >
         <div className=" flex items-end justify-center">
           <WhiteVecto />
@@ -90,7 +90,11 @@ const BrackingCases = () => {
                 <p className="font-bahnschrift font-semibold text-xl text-center lg:text-start xl:text-[22px] text-white sm:max-w-[209px] mb-2 sm:mb-0">
                   California Schools Sexual Abuse
                 </p>
-                <ButtonMain type="submit" title="Take Action Now" />
+                <ButtonMain
+                  customStyles="!py-[18px] !px-[25px]"
+                  type="submit"
+                  title="Take Action Now"
+                />
               </div>
             </div>
           </div>

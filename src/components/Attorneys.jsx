@@ -9,7 +9,7 @@ const Attorneys = () => {
       data-aos-offset="-1000"
       className=" mt-16 relative z-10 "
     >
-      <div className="container xl:max-w-[1140px] mx-auto  px-3 relative overflow-hidden">
+      <div className="container xl:max-w-[1140px] mx-auto  px-5 xl:px-0 relative overflow-hidden">
         <div className=" absolute top-11 hidden lg:block">
           <AttorneysBigC />
         </div>
